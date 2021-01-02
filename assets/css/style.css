@@ -143,23 +143,23 @@ footer img {
 
 @media screen and (max-width: 1000px) {
     main {
-    width: 100%;
+    /* width: 100%;
     height: auto;
     background-image: url(/assets/images/intro.jpg);
     background-size: cover;
     margin-right: auto;
     margin-left: auto;
-    position: relative;
+    position: relative; */
     }
 
     .buttons {
-    /* display: grid;
+    display: grid;
     grid-template-columns: 480px;
     grid-template-rows: 2;
-         */
-    display: none;
+    row-gap: 30px;
+    /* align-items: center; */
+    justify-content: center;
     }
     .box2 {
-        grid-row;
     }
 }
