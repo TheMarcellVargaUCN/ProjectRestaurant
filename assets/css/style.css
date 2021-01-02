@@ -1,5 +1,9 @@
 html {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
     background-image: url(../images/BG-fit.jpg);
+    /* background-attachment: fixed; */
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Open Sans', sans-serif;
@@ -9,11 +13,9 @@ html {
     position: fixed;
     background: #191c27;
     width: 101%;
-    margin-top:-9px;
-    margin-left: -7px;
+    margin-top:-8px;
+    margin-left: -8px;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
     z-index: 2;
 }
 
@@ -42,9 +44,7 @@ html {
 .nav-link a:hover {
     color:  #96192b;
 }
-
-
-
+/* ------------------------------- main-page--------------- */
 
 main {
     width: 1000px;
@@ -163,6 +163,7 @@ footer img {
     .box2 {
     }
 }
+<<<<<<< HEAD
 #box {
 	display: none;
 	width: 500px;
@@ -197,10 +198,115 @@ button {
 }
 #menu {
     display: block;
+=======
+
+
+
+
+/* ------------------------------- about us--------------- */
+
+.grid-about{
+    display: grid;
+    height: auto;
+    margin-top: 5%;
+    margin-right: 15%;
+    margin-left: 15%;
+    background-color:#333333cb; 
+    grid-gap: 0px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr;
+  }
+
+.grid-about .title-about{
+    color: #96192B;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    /* background: cornflowerblue; */
+}
+
+.title-about p{
+    font-size: 17px;
+    color: white;
+}
+
+.grid-about .text-about{
+    text-align: left;
+    font-size: 20px;
+    color: white;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    padding-right: 10%;
+    padding-left: 35%;
+    /* background: rgb(26, 56, 112); */
+}
+.grid-about .text-about1{
+    text-align: left;
+    font-size: 20px;
+    color: white;
+    padding: 0;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    padding-right: 10%;
+    padding-left: 35%;
+    /* background: rgb(147, 183, 248); */
+}
+
+
+.grid-about .about-img1{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start:2;
+    grid-row-end: 2;
+    padding-right:35%;
+    padding-left: 10%;
+    text-align: left;
+    font-size: 20px;
+    color: white;
+    /* background: rgb(4, 14, 31); */
+}
+
+.grid-about .about-img1 img{
+    width: 100%;
+}
+
+.grid-about .about-img2{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start:3;
+    grid-row-end: 3;
+    padding-right:8%;
+    padding-left: 32%;
+    /* background-color:#33333398;  */
+}
+
+.grid-about .about-img2 img{
+    width: 100%;
+}
+
+.grid-about .about-img3{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start:3;
+    grid-row-end: 3;
+    padding-right:32%;
+    padding-left: 8%;
+    /* background-color:#33333398;  */
+}
+.grid-about .about-img3 img{
+    width: 100%;
+>>>>>>> 6e44cad19b5a1092a3295f525a1e5c64c3ff3a98
 }
 
 
 
+<<<<<<< HEAD
 
 
 
@@ -213,3 +319,172 @@ button {
         display: none;
     }
     
+=======
+/* ------------------------------- confirmation --------------- */
+
+.grid-confirmation{
+    display: grid;
+    height: 100%;
+    margin-top: 5%;
+    margin-right: 15%;
+    margin-left: 15%;
+    background-color:#ff2d2d; 
+    grid-gap: 0px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 0.2fr 0.3fr 0.3fr 0.3fr;
+  }
+
+  .grid-confirmation .title-confirmation{
+    color: #96192B;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    /* background: cornflowerblue; */
+}
+
+.title-confirmation p{
+    font-size: 17px;
+    color: white;
+}
+
+.grid-confirmation .confirmation-img4{
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start:2;
+    grid-row-end: 2;
+    /* background-color:#33333398;  */
+}
+.grid-confirmation .confirmation-img4 img{
+    width: 85%;
+}
+
+.grid-confirmation .confirmation-img5{
+    text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start:2;
+    grid-row-end: 2;
+    /* background-color:#33333398;  */
+}
+.grid-confirmation .confirmation-img5 img{
+    width: 68%;
+}
+
+.grid-confirmation .confirmation-img6{
+    text-align: center;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start:2;
+    grid-row-end: 2;
+    /* background-color:#33333398;  */
+}
+.grid-confirmation .confirmation-img6 img{
+    width: 85%;
+}
+
+.confirmation-text{
+    margin-top: 5%;
+    text-align: left;
+    margin-left: 8%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start:3;
+    grid-row-end: 3;
+}
+
+.confirmation-text h2{
+  font-size: 20px;
+  color: #96192B;
+}
+
+.confirmation-text p{
+    font-size: 17px;
+    width: 60%;
+    color: white;
+  }
+
+  .confirmation-text1{
+    margin-top: 5%;
+    text-align: left;
+    margin-left: 8%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start:4;
+    grid-row-end: 4;
+}
+
+.confirmation-text1 h2{
+  font-size: 20px;
+  color: #96192B;
+}
+
+.confirmation-text1 p{
+    font-size: 17px;
+    width: 60%;
+    color: white;
+  }
+
+  .confirmation-text2{
+    text-align: left;
+    margin-left: 8%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start:5;
+    grid-row-end: 5;
+}
+
+.confirmation-text2 h2{
+  font-size: 20px;
+  color: #96192B;
+}
+
+.confirmation-text2 p{
+    font-size: 17px;
+    width: 60%;
+    color: white;
+  }
+
+  .confirmation-text3 {
+    text-align: left;
+    margin-top: -8%;
+    margin-left: 8%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start:6;
+    grid-row-end: 6;
+}
+
+.confirmation-text3 p{
+font-size: 17px;
+padding: 2%;
+width: 40%;
+color: white;
+border: solid 3px  #96192B;
+}
+
+.confirmation-text4 {
+    width: 60%;
+    text-align: left;
+    margin-top: 5%;
+    margin-left: 35%;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start:3;
+    grid-row-end: 6;
+}
+
+.confirmation-text4 h2{
+    font-size: 20px;
+    color: #96192B;
+}
+
+.confirmation-text4 p{
+    font-size: 17px;
+    color: #ffffff;
+}
+
+/* ------------------------------- footer--------------- */
+>>>>>>> 6e44cad19b5a1092a3295f525a1e5c64c3ff3a98
