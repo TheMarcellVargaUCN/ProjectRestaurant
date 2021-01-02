@@ -163,7 +163,6 @@ footer img {
     .box2 {
     }
 }
-<<<<<<< HEAD
 #box {
 	display: none;
 	width: 500px;
@@ -198,7 +197,6 @@ button {
 }
 #menu {
     display: block;
-=======
 
 
 
@@ -301,12 +299,10 @@ button {
 }
 .grid-about .about-img3 img{
     width: 100%;
->>>>>>> 6e44cad19b5a1092a3295f525a1e5c64c3ff3a98
 }
 
 
 
-<<<<<<< HEAD
 
 
 
@@ -315,11 +311,16 @@ button {
 
 @media screen and (max-width: 500px) {
 
-    nav {
+    header {
         display: none;
     }
-    
-=======
+}
+@media screen and (min-width: 1000px) {
+
+    .hammenu {
+        display: none;
+    }
+}
 /* ------------------------------- confirmation --------------- */
 
 .grid-confirmation{
@@ -487,4 +488,3 @@ border: solid 3px  #96192B;
 }
 
 /* ------------------------------- footer--------------- */
->>>>>>> 6e44cad19b5a1092a3295f525a1e5c64c3ff3a98
