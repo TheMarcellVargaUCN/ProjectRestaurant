@@ -5,44 +5,43 @@ html {
     font-family: 'Open Sans', sans-serif;
 }
 
-header {
-    background: #191c27;
-    width: 100%;
-    height: 7%;
-    margin-left: -9px;
-    margin-top: -9px;
+.header {
     position: fixed;
+    background: #191c27;
+    width: 101%;
+    margin-top:-9px;
+    margin-left: -7px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     z-index: 2;
 }
 
-header img {
-    width: 15%;
-    margin-top:16px;
+.logo-header {
+    cursor: pointer;
+    margin-right: auto;
     margin-left: 2%;
+    width: 15%;
+    margin-top:5px;
+}
+.nav-link{
+    list-style: none;
 }
 
-nav ul {
-    color: white;
-    float: right;
-    margin-right: 3%;
-    margin-top: 15px;
-}
-
-nav ul li{
+.nav-link li{
     display: inline-block;
-    margin-left: 20px;
-
+    padding-right:  30px;
+    padding-left: 30px;
 }
-nav ul li a{
-    color: white;
-    font-size: 17px;
+
+.nav-link li a{
     text-decoration: none;
+    color: white;
 }
 
-nav a:hover {
+.nav-link a:hover {
     color:  #96192b;
 }
-
 
 
 
