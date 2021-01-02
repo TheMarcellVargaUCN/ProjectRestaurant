@@ -1,30 +1,51 @@
 html {
-    background-image: url(/assets/images/lines.jpg);
-    background-size: 1920px;
+    background-image: url(../images/BG-fit.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
     font-family: 'Open Sans', sans-serif;
 }
-header {
-    height: 70px;
-    background-color: #191c27;
+
+.header {
+    position: fixed;
+    background: #191c27;
+    width: 101%;
+    margin-top:-9px;
+    margin-left: -7px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 2;
+}
+
+.logo-header {
+    cursor: pointer;
+    margin-right: auto;
+    margin-left: 2%;
+    width: 15%;
+    margin-top:5px;
+}
+.nav-link{
+    list-style: none;
+}
+
+.nav-link li{
+    display: inline-block;
+    padding-right:  30px;
+    padding-left: 30px;
+}
+
+.nav-link li a{
+    text-decoration: none;
     color: white;
-    font-size: 20px;
 }
-header img {
-    width: 300px;
-    margin: 20px;
-}
-.navbar {
-    display: grid;
-    float: right;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 10px;
-    justify-items: center;
-    margin-right: 50px;
-}
-.navbar::hoover {
+
+.nav-link a:hover {
     color:  #96192b;
 }
+
+
+
+
 main {
     width: 1000px;
     height: 562px;
