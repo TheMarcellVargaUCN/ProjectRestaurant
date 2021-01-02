@@ -167,7 +167,6 @@ footer img {
 
 
 
-
 /* ------------------------------- about us--------------- */
 
 .grid-about{
@@ -193,7 +192,7 @@ footer img {
 }
 
 .title-about p{
-    font-size: 15px;
+    font-size: 17px;
     color: white;
 }
 
@@ -269,18 +268,19 @@ footer img {
 }
 
 
+
 /* ------------------------------- confirmation --------------- */
 
 .grid-confirmation{
     display: grid;
     height: 100%;
-    margin-top: 10%;
+    margin-top: 5%;
     margin-right: 15%;
     margin-left: 15%;
     background-color:#ff2d2d; 
     grid-gap: 0px;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr;
+    grid-template-rows: 0.2fr 0.2fr 0.3fr 0.3fr 0.3fr;
   }
 
   .grid-confirmation .title-confirmation{
@@ -294,7 +294,7 @@ footer img {
 }
 
 .title-confirmation p{
-    font-size: 15px;
+    font-size: 17px;
     color: white;
 }
 
