@@ -163,3 +163,53 @@ footer img {
     .box2 {
     }
 }
+#box {
+	display: none;
+	width: 500px;
+	height: 400px;
+    background-color: #96192b;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 1fr 1fr;
+}
+#box img {
+    width: 300px;
+    display: unset;
+    margin-left: auto;
+    margin-right: auto;
+    grid-column-start: 1;
+    grid-column-end: auto;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    align-self: center;
+    justify-self: center;
+}
+
+button {
+    margin: 20px 30px;
+    background-color:  #96192b;
+    border: solid 2px white;
+    color: white;
+    font-size: 20px;
+}
+#box.show {
+	display: block;
+}
+#menu {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+
+    nav {
+        display: none;
+    }
+    
