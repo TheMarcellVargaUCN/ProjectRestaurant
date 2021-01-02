@@ -9,11 +9,9 @@ html {
     position: fixed;
     background: #191c27;
     width: 101%;
-    margin-top:-9px;
+    margin-top:-75px;
     margin-left: -7px;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
     z-index: 2;
 }
 
@@ -43,7 +41,108 @@ html {
     color:  #96192b;
 }
 
+/* ------------------------------- about us--------------- */
 
+.grid-about{
+    display: grid;
+    height: auto;
+    margin-top: 5%;
+    margin-right: 15%;
+    margin-left: 15%;
+    background-color:#333333cb; 
+    grid-gap: 0px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr;
+  }
+
+.grid-about .title-about{
+    color: #96192B;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    /* background: cornflowerblue; */
+}
+
+.title-about p{
+    font-size: 15px;
+    color: white;
+}
+
+.grid-about .text-about{
+    text-align: left;
+    font-size: 20px;
+    color: white;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    padding-right: 10%;
+    padding-left: 35%;
+    /* background: rgb(26, 56, 112); */
+}
+.grid-about .text-about1{
+    text-align: left;
+    font-size: 20px;
+    color: white;
+    padding: 0;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    padding-right: 10%;
+    padding-left: 35%;
+    /* background: rgb(147, 183, 248); */
+}
+
+
+.grid-about .about-img1{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start:2;
+    grid-row-end: 2;
+    padding-right:35%;
+    padding-left: 10%;
+    text-align: left;
+    font-size: 20px;
+    color: white;
+    /* background: rgb(4, 14, 31); */
+}
+
+.grid-about .about-img1 img{
+    width: 100%;
+}
+
+.grid-about .about-img2{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start:3;
+    grid-row-end: 3;
+    padding-right:8%;
+    padding-left: 32%;
+    /* background-color:#33333398;  */
+}
+
+.grid-about .about-img2 img{
+    width: 100%;
+}
+
+.grid-about .about-img3{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start:3;
+    grid-row-end: 3;
+    padding-right:32%;
+    padding-left: 8%;
+    /* background-color:#33333398;  */
+}
+.grid-about .about-img3 img{
+    width: 100%;
+}
+
+
+/* ------------------------------- Menu--------------- */
 
 
 main {
