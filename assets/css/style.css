@@ -161,7 +161,6 @@ footer img {
     justify-content: center;
     }
 }
-<<<<<<< HEAD
 #box {
 	width: 100vw;
 	height: 400px;
@@ -212,9 +211,7 @@ button {
         display: none;;
     }
 }
-=======
 
->>>>>>> e45fdb27d59cbb6897ac240f779380a660647b90
 
 /* ------------------------------- about us--------------- */
 
@@ -387,12 +384,10 @@ button {
         /* background: rgb(4, 14, 31); */
     }
 
-<<<<<<< HEAD
 
 
 
 
-=======
     .grid-about .about-img1 p{
        margin-top: 55%;
     }
@@ -528,7 +523,6 @@ button {
 
 
 
->>>>>>> e45fdb27d59cbb6897ac240f779380a660647b90
 /* ------------------------------- confirmation --------------- */
 
 .grid-confirmation{
