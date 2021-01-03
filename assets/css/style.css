@@ -1,7 +1,7 @@
 html {
     padding: 0;
     margin: 0;
-    background-image: url('/assets/images/BG-fit.jpg');
+    background-image: url('../images/BG-fit.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -132,7 +132,7 @@ body {
 main {
     width: 1000px;
     height: 562px;
-    background-image: url('/assets/images/intro.jpg');
+    background-image: url('../images/intro.jpg');
     background-size: cover;
     margin-right: auto;
     margin-left: auto;
@@ -164,7 +164,7 @@ main h2 {
     column-gap: 30px;
 }
 .box1{
-    background-image: url('/assets/images/btnmenu1.jpg');
+    background-image: url('../images/btnmenu1.jpg');
     background-size: cover;
     font-size: 20px;
     color: white;
@@ -180,7 +180,7 @@ main h2 {
     font-size: 20px;
 }
 .box2{
-    background-image: url('/assets/images/btnevents.jpg');
+    background-image: url('../images/btnevents.jpg');
     background-size: cover;
     font-size: 20px;
     color: white;
@@ -204,7 +204,7 @@ main h2 {
 }
 
 .bottom {
-    background-image: url('/assets/images/bottom.jpg');
+    background-image: url('../images/bottom.jpg');
     width: 1000px;
     height: 562px;
     margin-top: 100px;
@@ -238,7 +238,7 @@ footer img {
 
     width: 100%;
     height: ;
-    background-image: url('/assets/images/intro.jpg');
+    background-image: url('../images/intro.jpg');
     background-size: cover;
     margin-right: auto;
     margin-left: auto;
