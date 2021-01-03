@@ -160,21 +160,17 @@ footer img {
     /* align-items: center; */
     justify-content: center;
     }
-    .box2 {
-    }
 }
 #box {
-	display: none;
-	width: 500px;
+	width: 100vw;
 	height: 400px;
     background-color: #96192b;
-    display: grid;
+    display: none;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 100px 1fr 1fr;
 }
 #box img {
     width: 300px;
-    display: unset;
     margin-left: auto;
     margin-right: auto;
     grid-column-start: 1;
@@ -186,6 +182,7 @@ footer img {
 }
 
 button {
+    max-width: 300px;
     margin: 20px 30px;
     background-color:  #96192b;
     border: solid 2px white;
@@ -193,13 +190,27 @@ button {
     font-size: 20px;
 }
 #box.show {
-	display: block;
+	display: none;
 }
 #menu {
     display: block;
+    float: right;
+}
 
+@media screen and (max-width: 1000px) {
+    nav {
+        display: none;
+    }
+    .logo-header {
+        display: none;
+    }
+}
+@media screen and (min-width: 1000px) {
 
-
+    .hammenu {
+        display: none;;
+    }
+}
 
 /* ------------------------------- about us--------------- */
 
@@ -309,18 +320,7 @@ button {
 
 
 
-@media screen and (max-width: 500px) {
 
-    header {
-        display: none;
-    }
-}
-@media screen and (min-width: 1000px) {
-
-    .hammenu {
-        display: none;
-    }
-}
 /* ------------------------------- confirmation --------------- */
 
 .grid-confirmation{
