@@ -9,6 +9,8 @@ html {
     font-family: 'Open Sans', sans-serif;
 }
 
+/* ------------------------------- Header--------------- */
+
 .header {
     position: fixed;
     background: #191c27;
