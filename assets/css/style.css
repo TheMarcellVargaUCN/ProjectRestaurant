@@ -1,50 +1,130 @@
 html {
     padding: 0;
     margin: 0;
-    width: 100vw;
     background-image: url(../images/BG-fit.jpg);
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Open Sans', sans-serif;
 }
 
 /* ------------------------------- Header--------------- */
-
-.header {
-    position: fixed;
-    background: #191c27;
-    width: 101%;
-    margin-top:-8px;
-    margin-left: -8px;
-    display: flex;
-    z-index: 2;
+* {
+    box-sizing: border-box;
+}
+body {
+   margin:0;
+   padding:0; 
 }
 
-.logo-header {
-    cursor: pointer;
-    margin-right: auto;
-    margin-left: 2%;
-    width: 15%;
-    margin-top:5px;
-}
-.nav-link{
-    list-style: none;
-}
-
-.nav-link li{
-    display: inline-block;
-    padding-right:  30px;
-    padding-left: 30px;
+.navbar {
+    width: 100%;
+    position: fixed; 
+    display:flex;
+    margin-top: -0.01%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #13141A;
+    color: white;
+    font-size: 0.9rem;
 }
 
-.nav-link li a{
+.brand-title {
+    width: 40%;
+    margin-left:3%;
+}
+
+.navbar-links ul {
+    width: 100%;
+    margin:0;
+    margin-left: -10%;
+    padding:0;
+    display:flex;
+}
+.navbar-links li {
+    list-style:none;
+}
+
+.navbar-links li a {
     text-decoration: none;
     color: white;
+    padding:1rem;
+    display:block;
+
 }
 
-.nav-link a:hover {
-    color:  #96192b;
+.navbar-links ul li a:hover {
+   color:  #96192B;
+
+}
+
+.toggle-button {
+    position: absolute;
+    top: .8rem;
+    right:1.5rem;
+    display:none;
+    flex-direction: column;
+    justify-content: space-between;
+    width:30px;
+    height:20px;
+}
+
+.toggle-button .bar {
+    height:2%;
+    width:90%;
+    background-color: white;
+    border-radius:10px;
+}
+
+
+
+
+
+
+@media (max-width: 500px) {
+  
+    .brand-title img{
+        width: 100%;
+        margin-left:3%;
+        margin-top: 2%;
+    }   
+
+    .toggle-button {
+    display:flex;
+}
+
+.navbar-links ul li a:hover {
+    background-color: wheat;
+    color: black;
+}
+
+.navbar-links {
+    display:none;
+    width:100%;
+   
+}
+.navbar {
+    flex-direction: column;
+    align-items:flex-start;
+}
+.navbar-links ul {
+    flex-direction: column;
+    width:100%;
+    
+}
+.navbar-links li {
+    text-align: center;
+  
+}
+.navbar-links li a {
+    padding: .5rem 1rem;
+    
+}
+.navbar-links.active {
+    display: flex;
+ 
+}
+
 }
 /* ------------------------------- main-page--------------- */
 

@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/all.css">
-    <script src="assets/css/java.js" defer></script>
+    <script src="assets/css/java.js"></script>
+    <script src="assets/javascript/java-nav.js"defer></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
         </style>
@@ -15,28 +16,28 @@
 
 <body>
      <!-- .......................... header .......................... -->   
-    <header class="header">
-          
-        <img class="logo-header" src="assets/images/svalegaarden_logo_white.svg" width="300" alt="logo">
-    <nav>
-       <ul class="nav-link">
-           <li><a href="#">About us</li></a>
-           <li><a href="#">Menu</li></a>
-           <li><a href="#">Events</li></a>
-           <li><a href="#">Contact</li></a>
-       </ul>
-   </nav>
-   <div class="hammenu">
-       <button id="menu">MENU</button>
-    <div id="box">
-        <img src="/assets/images/svalegaarden_logo_white.svg">
-        <button>ABOUT US</button>
-        <button>MENU</button>
-        <button>EVENTS</button>
-        <button>CONTACT</button>
-    </div>
-   </div>
-</header>
+     <header>
+        <nav class="navbar">
+            <div class="brand-title">
+              <a href="index.html">  <img src="assets/images/svalegaarden_logo_white.svg" width="200" alt="logo"></a>
+            </div>
+            <a href="index.html" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <!-- <span class="bar"></span> -->
+            </a>
+       
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="aboutUs.html">ABOUT US</a></li>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="confirmation.html">EVENTS</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+           </nav> 
+    </header>
  <!-- .......................... Main-page .......................... -->   
     <main>
         <h3>Memorable experiences</h3>
