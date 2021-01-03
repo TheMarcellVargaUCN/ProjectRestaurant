@@ -137,6 +137,7 @@ main {
     margin-right: auto;
     margin-left: auto;
     position: relative;
+    z-index: -5;
 
 }
 main h3 {
@@ -226,13 +227,23 @@ footer img {
 
 @media screen and (max-width: 1000px) {
     main {
-    /* width: 100%;
+    /* width: 100vw;
     height: auto;
     background-image: url(/assets/images/intro.jpg);
     background-size: cover;
     margin-right: auto;
     margin-left: auto;
-    position: relative; */
+    position: relative;
+    z-index: -5; */
+
+    width: 100%;
+    height: ;
+    background-image: url(/assets/images/intro.jpg);
+    background-size: cover;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    z-index: -5;
     }
 
     .buttons {
@@ -240,8 +251,9 @@ footer img {
     grid-template-columns: 480px;
     grid-template-rows: 2;
     row-gap: 30px;
-    /* align-items: center; */
-    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 480px;
     }
 }
 #box {
