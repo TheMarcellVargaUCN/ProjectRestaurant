@@ -6,7 +6,7 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Open Sans', sans-serif;
-    color: white
+    color: white;
 }
 
 /* ------------------------------- Header--------------- */
@@ -142,6 +142,7 @@ body {
 .seasonmenubox {
     background-color: #333333cb; 
     padding-top: 5vw;
+    display: inline-block;
 }
 
 .seasonmenubox h1 {
@@ -229,6 +230,8 @@ body {
     width: 25vw;
     height: auto;
     margin-top: 5vh;
+    display: inline-block;
+
 }
 
 .starters {
@@ -244,7 +247,9 @@ body {
 }
 
 
+
 @media only screen and (max-width: 800) {
+
     .seasonmenu {
     text-align: center;
 }
@@ -253,6 +258,7 @@ body {
     background-color: #333333cb; 
     opacity: 50%;
     padding-top: 5vw;
+    display: inline-block;
 }
 
 .seasonmenubox h1 {
@@ -263,6 +269,7 @@ body {
     display: inline-block;
     padding-right: 30px;
   }
+
   
 .seasonnavbar-links li a {
     text-align: center;
@@ -290,7 +297,6 @@ body {
 .seasonmenuintro {
     text-align: center;
     font-size: 125%;
-    margin-bottom: 10vh;
 }
 
 
@@ -307,7 +313,6 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas:
-    'seasonmenuintro'
     'seasonmenuintro'
     'starters'
     'startersimage'
@@ -351,9 +356,6 @@ body {
     border-bottom: 3px white solid;
 }
 
-. {
-    border-bottom: 3px white solid;
-}
 .seasonmenu {
     text-align: center;
 }
