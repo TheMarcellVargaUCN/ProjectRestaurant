@@ -516,6 +516,12 @@ body {
 
 /* ------------------------------- confirmation --------------- */
 
+hr {
+    width:240px;
+    color:#C0C0C0;
+}
+
+
 .grid-confirmation{
     display: grid;
     height: 100%;
@@ -712,7 +718,7 @@ border: solid 3px  #96192B;
         margin-top: 5%;
         margin-right: 15%;
         margin-left: 15%;
-        background-color:#ff2d2d; 
+        background-color:#333333cb;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 0.2fr 0.2fr 0.3fr 0.3fr 0.3fr;
       }
@@ -888,7 +894,7 @@ border: solid 3px  #96192B;
         margin-top: 5%;
         margin-right: 15%;
         margin-left: 15%;
-        background-color:#ff2d2d; 
+        background-color:#333333cb;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 0.2fr 0.2fr 0.3fr 0.3fr 0.3fr;
       }

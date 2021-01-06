@@ -230,7 +230,7 @@ footer {
         margin-top: 8%;
         margin-right: 18%;
         margin-left: 18%;
-        background-color:#333; 
+        background-color:#333333cb; 
         grid-template-columns: 0.5fr 0.5fr ;
         grid-template-rows: 0.2fr 0.2fr 0.3fr 0.3fr 0.3fr 0.3fr 0.2fr;
       }
@@ -304,7 +304,7 @@ footer {
         margin-top: 8%;
         margin-right: 18%;
         margin-left: 18%;
-        background-color:#333; 
+        background-color:#333333cb; 
         grid-template-columns: 0.5fr 0.5fr ;
         grid-template-rows: 0.2fr 0.2fr 0.3fr 0.3fr 0.3fr 0.3fr ;
       }
@@ -385,7 +385,7 @@ footer {
         margin-top: 8%;
         margin-right: 18%;
         margin-left: 18%;
-        background-color:#333; 
+        background-color:#333333cb; 
         grid-template-columns: 0.5fr 0.5fr ;
         grid-template-rows: 0.2fr 0.2fr 0.3fr 0.3fr 0.3fr 0.8fr ;
       }
@@ -459,7 +459,7 @@ footer {
         margin-top: 8%;
         margin-right: 18%;
         margin-left: 18%;
-        background-color:#333; 
+        background-color:#333333cb; 
         grid-template-columns: 1fr;
         grid-template-rows: 0.2fr 0.2fr 0.3fr 0.2fr 1.8fr;
       }
@@ -556,7 +556,7 @@ footer {
         margin-top: 8%;
         margin-right: 18%;
         margin-left: 18%;
-        background-color:#333; 
+        background-color:#333333cb; 
         grid-template-columns: 1fr;
         grid-template-rows: 0.2fr 0.2fr 0.3fr 0.2fr 1.8fr;
       }
