@@ -153,7 +153,7 @@ hr {
     grid-row-end: 5; 
 }
 
-.contact-img1  img {
+.contact-img1  iframe {
     width:70%;
     margin-left: 28%;
 }
