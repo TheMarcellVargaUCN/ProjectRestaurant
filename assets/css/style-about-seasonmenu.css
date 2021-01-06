@@ -355,7 +355,8 @@ body {
 .seasonmenubox img {
     width: 22.5vw;
     height: auto;
-    margin-top: 10vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 }
 
 .starters {
