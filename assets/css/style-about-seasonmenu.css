@@ -1,0 +1,463 @@
+html {
+    padding: 0;
+    margin: 0;
+    background-image: url('../images/BG-fit.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+    color: white
+}
+
+/* ------------------------------- Header--------------- */
+
+* {
+    box-sizing: border-box;
+}
+body {
+   margin:0;
+   padding:0; 
+}
+
+.navbar {
+    z-index: 2;
+    width: 100%;
+    position: fixed; 
+    display:flex;
+    margin-top: -0.01%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #13141A;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.brand-title {
+    width: 40%;
+    margin-left:3%;
+}
+
+.navbar-links ul {
+    width: 100%;
+    margin:0;
+    margin-left: -10%;
+    padding:0;
+    display:flex;
+}
+.navbar-links li {
+    list-style:none;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: white;
+    padding:1rem;
+    display:block;
+
+}
+
+.navbar-links ul li a:hover {
+   color:  #96192B;
+
+}
+
+.toggle-button {
+    position: absolute;
+    top: .8rem;
+    right:1.5rem;
+    display:none;
+    flex-direction: column;
+    justify-content: space-between;
+    width:30px;
+    height:20px;
+}
+
+.toggle-button .bar {
+    height:2%;
+    width:90%;
+    background-color: white;
+    border-radius:10px;
+}
+
+
+
+
+
+
+@media (max-width: 500px) {
+  
+    .brand-title img{
+        width: 100%;
+        margin-left:3%;
+        margin-top: 2%;
+    }   
+
+    .toggle-button {
+    display:flex;
+}
+
+.navbar-links ul li a:hover {
+    background-color: wheat;
+    color: black;
+}
+
+.navbar-links {
+    display:none;
+    width:100%;
+   
+}
+.navbar {
+    flex-direction: column;
+    align-items:flex-start;
+}
+.navbar-links ul {
+    flex-direction: column;
+    width:100%;
+    
+}
+.navbar-links li {
+    text-align: center;
+  
+}
+.navbar-links li a {
+    padding: .5rem 1rem;
+    
+}
+.navbar-links.active {
+    display: flex;
+ 
+}
+
+}
+
+/* ------------------------------- Main page--------------- */
+
+/* ------------------------------- Season menu bar--------------- */
+
+
+.seasonmenu {
+    text-align: center;
+}
+
+.seasonmenubox {
+    background-color: #333333cb; 
+    padding-top: 5vw;
+}
+
+.seasonmenubox h1 {
+    margin: 5vh;
+}
+
+.seasonmenubox p {
+}
+
+.seasonnavbar-links li {
+    display: inline-block;
+    padding-right: 30px;
+  }
+  
+.seasonnavbar-links li a {
+    text-align: center;
+    padding: 10px 10px;
+    float: right;
+  }
+  
+.seasonmenu ul {
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+  }  
+
+.seasonmenu li a:hover {
+    color: red;
+  }
+  
+.seasonmenu li a {
+  text-decoration: none;
+  color: white;
+  }
+
+/* ------------------------------- Season menu--------------- */
+
+.seasonmenuintro {
+    text-align: center;
+    font-size: 125%;
+    margin-bottom: 10vh;
+}
+
+
+.seasonmenubox {
+    text-align: left;
+    display: grid;
+    height: auto;
+    margin-right: 15%;
+    margin-left: 15%;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    background-color:#333333cb; 
+    grid-gap: 5vw;
+    grid-template-columns: (2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+    'seasonmenuintro seasonmenuintro'
+    'starters startersimage'
+    'maincourses maincoursesimage'
+    'desserts dessertsimage';
+
+  }
+
+  .seasonmenuintro { grid-area: seasonmenuintro; }
+  .starters { grid-area: starters; }
+  .startersimage { grid-area: startersimage; }
+  .maincourses { grid-area: maincourses; }
+  .maincoursesimage { grid-area: maincoursesimage; }
+  .desserts { grid-area: desserts; }
+  .dessertsimage { grid-area: dessertsimage; }
+
+
+.seasonmenubox h2 {
+    margin-left: 1vw;
+    color: white;
+}
+
+.seasonmenubox p {
+    padding-bottom: 5vh;
+    color: white;
+}
+
+.seasonmenubox img {
+    width: 25vw;
+    height: auto;
+    margin-top: 5vh;
+}
+
+.starters {
+    border-bottom: 3px white solid;
+}
+
+.maincourses {
+    border-bottom: 3px white solid;
+}
+
+. {
+    border-bottom: 3px white solid;
+}
+
+
+@media only screen and (max-width: 800) {
+    .seasonmenu {
+    text-align: center;
+}
+
+.seasonmenubox {
+    background-color: #333333cb; 
+    opacity: 50%;
+    padding-top: 5vw;
+}
+
+.seasonmenubox h1 {
+    margin: 5vh;
+}
+
+.seasonnavbar-links li {
+    display: inline-block;
+    padding-right: 30px;
+  }
+  
+.seasonnavbar-links li a {
+    text-align: center;
+    padding: 10px 10px;
+    float: right;
+  }
+  
+.seasonmenu ul {
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+  }  
+
+.seasonmenu li a:hover {
+    color: red;
+  }
+  
+.seasonmenu li a {
+  text-decoration: none;
+  color: white;
+  }
+
+/* ------------------------------- Season menu--------------- */
+
+.seasonmenuintro {
+    text-align: center;
+    font-size: 125%;
+    margin-bottom: 10vh;
+}
+
+
+.seasonmenubox {
+    text-align: left;
+    display: grid;
+    height: auto;
+    margin-right: 15%;
+    margin-left: 15%;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    background-color:#333333cb; 
+    grid-gap: 5vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    'seasonmenuintro'
+    'seasonmenuintro'
+    'starters'
+    'startersimage'
+    'maincourses'
+    'maincoursesimage'
+    'desserts'
+    'dessertsimage';
+
+  }
+
+  .seasonmenuintro { grid-area: seasonmenuintro; }
+  .starters { grid-area: starters; }
+  .startersimage { grid-area: startersimage; }
+  .maincourses { grid-area: maincourses; }
+  .maincoursesimage { grid-area: maincoursesimage; }
+  .desserts { grid-area: desserts; }
+  .dessertsimage { grid-area: dessertsimage; }
+
+
+.seasonmenubox h2 {
+    margin-left: 1vw;
+    color: white;
+}
+
+.seasonmenubox p {
+    padding-bottom: 5vh;
+    color: white;
+}
+
+.seasonmenubox img {
+    width: 22.5vw;
+    height: auto;
+    margin-top: 10vh;
+}
+
+.starters {
+    border-bottom: 3px white solid;
+}
+
+.maincourses {
+    border-bottom: 3px white solid;
+}
+
+. {
+    border-bottom: 3px white solid;
+}
+.seasonmenu {
+    text-align: center;
+}
+
+.seasonmenubox {
+    background-color: #333333cb; 
+    opacity: 50%;
+    padding-top: 5vw;
+}
+
+.seasonmenubox h1 {
+    margin: 5vh;
+}
+
+.seasonnavbar-links li {
+    display: inline-block;
+    padding-right: 30px;
+  }
+  
+.seasonnavbar-links li a {
+    text-align: center;
+    padding: 10px 10px;
+    float: right;
+  }
+  
+.seasonmenu ul {
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+  }  
+
+.seasonmenu li a:hover {
+    color: red;
+  }
+  
+.seasonmenu li a {
+  text-decoration: none;
+  color: white;
+  }
+
+/* ------------------------------- Season menu--------------- */
+
+.seasonmenuintro {
+    text-align: center;
+    font-size: 125%;
+    margin-bottom: 10vh;
+}
+
+
+.seasonmenubox {
+    text-align: left;
+    display: grid;
+    height: auto;
+    margin-right: 15%;
+    margin-left: 15%;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    background-color:#333333cb; 
+    grid-gap: 5vw;
+    grid-template-columns: (2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+    'seasonmenuintro seasonmenuintro'
+    'starters startersimage'
+    'maincourses maincoursesimage'
+    'desserts dessertsimage';
+
+  }
+
+  .seasonmenuintro { grid-area: seasonmenuintro; }
+  .starters { grid-area: starters; }
+  .startersimage { grid-area: startersimage; }
+  .maincourses { grid-area: maincourses; }
+  .maincoursesimage { grid-area: maincoursesimage; }
+  .desserts { grid-area: desserts; }
+  .dessertsimage { grid-area: dessertsimage; }
+
+
+.seasonmenubox h2 {
+    margin-left: 1vw;
+    color: white;
+}
+
+.seasonmenubox p {
+    padding-bottom: 5vh;
+    color: white;
+}
+
+.seasonmenubox img {
+    width: 22.5vw;
+    height: auto;
+    margin-top: 10vh;
+}
+
+.starters {
+    border-bottom: 3px white solid;
+}
+
+.maincourses {
+    border-bottom: 3px white solid;
+}
+
+. {
+    border-bottom: 3px white solid;
+}
+
+}
