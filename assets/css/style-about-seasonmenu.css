@@ -231,6 +231,7 @@ body {
     width: 25vw;
     height: auto;
     margin-top: 5vh;
+    margin-bottom: 7.5vh;
     display: inline-block;
 
 }
@@ -348,7 +349,7 @@ body {
 }
 
 .seasonmenubox p {
-    padding-bottom: 5vh;
+    margin-bottom: 5vh;
     color: white;
 }
 
@@ -359,7 +360,7 @@ body {
     margin-bottom: 5vh;
 }
 
-.starters {
+.starters p {
     border-bottom: 3px white solid;
 }
 
@@ -425,7 +426,7 @@ body {
     padding-left: 5vw;
     padding-right: 5vw;
     background-color:#333333cb; 
-    grid-gap: 5vw;
+    grid-gap: 2.5vw;
     grid-template-columns: (2, 1fr);
     grid-template-rows: auto;
     grid-template-areas:
@@ -451,8 +452,7 @@ body {
 }
 
 .seasonmenubox p {
-    padding-bottom: 5vh;
-    color: white;
+¨    color: white;
 }
 
 .seasonmenubox img {
