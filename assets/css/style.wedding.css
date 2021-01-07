@@ -4,6 +4,7 @@ html {
     background-position: center center;
     background-size: cover;
     font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
 }
 
 hr {

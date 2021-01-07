@@ -1,0 +1,979 @@
+html {
+    background-image: url(../images/BG-thin_line.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5rem;
+}
+
+hr {
+    width:240px;
+    color:#FFD700;
+}
+.grid-season {
+    display: grid;
+    height: 100%;
+    margin-top: 5%;
+    margin-right: 15%;
+    margin-left: 15%;
+    background-color:#333333cb;  
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows:0.2fr 0.2fr 0.3fr 0.3fr 0.3fr 0.2fr 0.3fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
+  }
+  * {
+    box-sizing: border-box;
+}
+body {
+   margin:0;
+   padding:0; 
+}
+/* nav */
+
+.navbar {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+#logo {
+    width:150px;
+    margin-left:30px;
+}
+.navbar-links ul {
+    margin:0;
+    padding:0;
+    display:flex;
+    margin-right:20px;
+}
+.navbar-links li {
+    list-style:none;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: white;
+    padding:1rem;
+    display:block;
+
+}
+
+.navbar-links ul li a:hover {
+    border: 1px solid #96192B;
+
+}
+
+.toggle-button {
+    position: absolute;
+    top: 1.55rem;
+    right:1rem;
+    display:none;
+    flex-direction: column;
+    justify-content: space-between;
+    width:30px;
+    height:21px;
+}
+
+.toggle-button .bar {
+    height:3px;
+    width:100%;
+    background-color: white;
+    border-radius:10px;
+}
+
+
+@media (max-width: 620px) {
+   
+    .toggle-button {
+    display:flex;
+}
+
+.navbar-links ul li a:hover {
+    background-color:#96192B;
+    color: #191C27;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.navbar-links {
+    display:none;
+    width:100%;
+   
+}
+.navbar {
+    flex-direction: column;
+    align-items:flex-start;
+}
+.navbar-links ul {
+    flex-direction: column;
+    width:100%;
+    
+}
+.navbar-links li {
+    text-align: center;
+  
+}
+.navbar-links li a {
+    padding: .5rem 1rem;
+    
+}
+.navbar-links.active {
+    display: flex;
+ 
+}
+}
+
+.title-season {
+    margin-top: 15%;
+    text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    font-size: 1rem;
+
+}
+
+.title-season h1 {
+    color: rgb(255, 255, 255);
+    margin-bottom: 22%;
+    margin-left: -76%;
+}
+
+.nav-season {
+    color: white;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    font-size: 1rem; 
+    display: flex;
+    margin: 0;
+    margin-left:25%;
+   
+}
+.nav-season h3 {
+margin: 0;
+margin-left:10%;
+    
+}
+.nav-season a {
+    text-decoration: none;
+    color: white;
+}
+.nav-season a:hover {
+    color: #96192B;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+/* main */
+
+.title-season-p {
+    color: white;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 3;  
+    font-size: 0.9rem;
+    margin-top: 3%;
+    margin-left: 7%;
+}
+.season-img1 {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 4;  
+  
+}
+.season-img1 img {
+    width: 75%;
+}
+.season-text {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 5;  
+}
+.season-text p {
+    color: white;
+    font-size: 1rem;
+    margin-top: 2%;
+}
+
+/* Starters */
+.meal-name {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 7;
+    grid-row-end: 7;  
+}
+
+.meal-name h1 {
+    color: white;
+    font-size: 1.7rem;
+    margin-left: -27%;
+}
+.meal-info {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 8;
+    grid-row-end: 8; 
+}
+.meal-info p {
+    color: white;
+    font-size: 0.9rem;
+    text-align: left;
+    margin-left: 26%;
+    
+}
+
+/* Main course */
+.meal-name1 {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 9;
+    grid-row-end: 9;  
+}
+
+.meal-name1 h1 {
+    color: white;
+    font-size: 1.7rem;
+    margin-left: -11%;
+}
+.meal-info1 {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 10;
+    grid-row-end: 10; 
+}
+.meal-info1 p {
+    color: white;
+    font-size: 0.9rem;
+    text-align: left;
+    margin-left: 26%;
+}
+
+.meal-name2 {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 11;
+    grid-row-end: 11;  
+}
+.meal-name2 h1 {
+    color: white;
+    font-size: 1.7rem;
+    margin-left: -24%;  
+}
+
+.meal-info2 {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 12;
+    grid-row-end: 12;  
+}
+.meal-info2 p {
+    color: white;
+    font-size: 0.9rem;
+    text-align: left;
+    margin-left: 26%;
+}
+
+/* img */
+
+.meal-img3 {
+    text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 8;
+    grid-row-end: 8;  
+}
+.meal-img3 img {
+    width:90%;
+    margin-left:63%;
+}
+
+.meal-img2 {
+    text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 10;
+    grid-row-end: 10;  
+}
+
+.meal-img2 img {
+    width:90%;
+    margin-left:63%;
+}
+.meal-img1 { 
+    text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 12;
+    grid-row-end: 12;  
+}
+.meal-img1 img {
+    width:90%;
+    margin-left:63%;
+}
+/* footer */
+.grid-footer{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    margin-top: 3%;
+    background-color: #13141A;  
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr;
+  }
+
+  .grid-footer .footer-logo{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    margin-top: 7%;
+    margin-bottom: 7%;
+    margin-left: 55%;
+}
+
+.footer-logo img{
+   width: 80%;
+}
+
+.grid-footer .footer-text{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    text-align: right;
+    margin-right: 50%;
+    color: white;
+    font-size: 0.9em;
+}
+
+/* for big screens */
+@media only screen and (min-width: 2000px){
+
+    .grid-footer .footer-text{
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        font-size: 1.3em;
+        margin-top: 2%;
+        text-align: right;
+        margin-right: 50%;
+        color: white;
+    }
+
+}
+
+/* for tablet */
+@media only screen and (max-width: 768px){
+
+    .grid-footer .footer-text{
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        text-align: right;
+        font-size: 0.5em;
+        margin-right: 50%;
+        color: white;
+    }
+}
+
+/* for phone */
+@media only screen and (max-width: 500px){
+
+    .grid-footer .footer-text{
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        font-size: 0.3em;
+        text-align: right;
+        margin-right: 40%;
+        color: white;
+    }
+
+    .grid-footer .footer-logo{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        margin-top: 7%;
+        margin-bottom: 7%;
+        margin-left: 25%;
+    }
+}
+/* for tablet  */
+@media only screen and (max-width: 1210px){
+    .meal-name h1 {
+        color: rgb(255, 255, 255);
+        font-size: 1.7rem;
+        margin-left: -23%;
+    }
+    .meal-name1 h1 {
+        color: rgb(255, 255, 255);
+        font-size: 1.7rem;
+        margin-left: -4%;
+    }
+    .meal-name2 h1 {
+        color: rgb(255, 255, 255);
+        font-size: 1.7rem;
+        margin-left: -20%;  
+    }
+ /*    img */
+
+    .meal-img3 img {
+        width:95%;
+        margin-left:63%;
+        margin-top: 5%;
+    }
+
+    .meal-img2 img {
+        width:95%;
+        margin-left:63%;
+        margin-top: 20%;
+    }
+    .meal-img1 img {
+        width:90%;
+        margin-left:63%;
+        margin-top: 20%;
+}
+
+/* paragraph */
+.meal-info p {
+    color: white;
+    font-size: 0.85rem;
+    text-align: left;
+    margin-left: 26%; 
+    width:85%;
+}
+.meal-info1 p {
+    color: white;
+    font-size: 0.85rem;
+    text-align: left;
+    margin-left: 26%;
+    width:85%;
+}
+.meal-info2 p {
+    color: white;
+    font-size: 0.85rem;
+    text-align: left;
+    margin-left: 26%;
+    width:85%;
+}
+}
+
+@media only screen and (max-width: 1100px) {
+    .nav-season h3 {
+        margin: 0;
+        margin-left:6%;   
+        }   
+}
+@media only screen and (max-width: 950px) {
+    .grid-season {
+        display: grid;
+        height: 100%;
+        margin-top: 5%;
+        margin-right: 15%;
+        margin-left: 15%;
+        background-color:#333333cb; ; 
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows:0.2fr 0.2fr 0.3fr 0.3fr 0.3fr 0.1fr 0.3fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
+      }
+
+    .title-season h1 {
+        color: rgb(255, 255, 255);
+        margin-bottom: 22%;
+        margin-left: -90%;
+        font-size: 26px;
+    }
+
+    .nav-season {
+        color: rgb(255, 255, 255);
+        text-align: center;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        font-size: 1rem; 
+        display: flex;
+        margin: 0;
+        margin-left:17%;
+       
+    }
+    .nav-season h3 {
+    margin: 0;
+    margin-left:10%;   
+    }
+
+    .title-season-p {
+        color: white;
+        text-align: center;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 3;  
+        font-size: 0.8rem;
+        margin-top: 5%;
+        margin-left: 3%;
+    }
+
+    .season-text p {
+        color: white;
+        font-size: 0.9rem;
+        margin-top: 3%;
+    }
+/* h1 */
+.meal-name h1 {
+    color: rgb(255, 255, 255);
+    font-size: 1.6rem;
+    margin-left: -20%;
+    margin-top: 21%;
+}
+.meal-name1 h1 {
+    color: rgb(255, 255, 255);
+    font-size: 1.6rem;
+    margin-left: 1%;
+}
+.meal-name2 h1 {
+    color: rgb(255, 255, 255);
+    font-size: 1.6rem;
+    margin-left: -17%;  
+}
+/* paragraph */
+.meal-info p {
+    color: white;
+    font-size: 0.80rem;
+    text-align: left;
+    margin-left: 26%; 
+    width:75%;
+}
+.meal-info1 p {
+    color: white;
+    font-size: 0.80rem;
+    text-align: left;
+    margin-left: 26%;
+    width:75%;
+}
+.meal-info2 p {
+    color: white;
+    font-size: 0.80rem;
+    text-align: left;
+    margin-left: 26%;
+    width:75%;
+}
+/* img */
+.meal-img3 img {
+    width:130%;
+    margin-left:23%;
+    margin-top: 15%;
+}
+
+.meal-img2 img {
+    width:130%;
+    margin-left:23%;
+    margin-top: 20%;
+}
+.meal-img1 img {
+    width:130%;
+    margin-left:23%;
+    margin-top: 20%;
+}
+.season-img1 img {
+    width: 85%;
+} 
+}
+@media only screen and (max-width: 800px) {
+     .grid-season {
+        display: grid;
+        height: 100%;
+        margin-top: 5%;
+        margin-right: 15%;
+        margin-left: 15%;
+        background-color:#333333cb;  
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows:0.2fr 0.2fr 0.3fr 0.3fr 0.3fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
+      } 
+    .title-season h1 {
+        color: rgb(255, 255, 255);
+        margin-bottom: 22%;
+        margin-left: -92%;
+        font-size: 24px;
+    }
+
+    .nav-season {
+        color: rgb(255, 255, 255);
+        text-align: center;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        font-size: 0.9rem; 
+        display: flex;
+        margin: 0;
+        margin-left:9%;
+       
+    }
+    .nav-season h3 {
+    margin: 0;
+    margin-left:10%;   
+    }
+
+    .title-season-p {
+        color: rgb(255, 255, 255);
+        text-align: center;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 3;  
+        font-size: 0.8rem;
+        margin-top: 4%;
+        margin-left: 14%;
+        width:70%;
+    }
+
+    .season-text p {
+        color: white;
+        font-size: 0.9rem;
+        margin-top: 2%;
+    } 
+
+    .season-img1 img {
+        width: 82%;
+    } 
+    .season-text p {
+        color: white;
+        font-size: 0.8rem;
+        margin-top: 3%;
+        margin-left: 4%;
+    }
+    /* h1 */
+.meal-name h1 {
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 2%;
+  
+}
+.meal-name1 h1 {
+    color: white;
+    font-size: 1.5rem;
+   
+}
+.meal-name2 h1 {
+    color: white;
+    font-size: 1.5rem;
+ 
+}
+/* paragraph */
+.meal-info p {
+    color: white;
+    font-size: 0.80rem;
+    text-align: left;
+    margin-left: 20%; 
+    width:90%;
+}
+.meal-info1 p {
+    color: white;
+    font-size: 0.80rem;
+    text-align: left;
+    margin-left: 20%;
+    width:90%;
+}
+.meal-info2 p {
+    color: white;
+    font-size: 0.80rem;
+    text-align: left;
+    margin-left: 20%;
+    width:90%;
+}
+
+/* img */
+.meal-img3 img {
+    width:150%;
+    margin-left:23%;
+    margin-top: 20%;
+}
+
+.meal-img2 img {
+    width:150%;
+    margin-left:23%;
+    margin-top: 20%;
+}
+.meal-img1 img {
+    width:150%;
+    margin-left:23%;
+    margin-top: 20%;
+}
+.season-img1 img {
+    width: 85%;
+} 
+}
+
+/* phone */
+@media only screen and (max-width: 550px) {
+    .grid-season {
+       display: grid;
+       height: 100%;
+       margin-top: 5%;
+       margin-right: 15%;
+       margin-left: 15%;
+       background-color:#333333cb;  
+       grid-template-columns: 1fr 1fr;
+       grid-template-rows:0.2fr 0.1fr 0.2fr 0.2fr 0.2fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
+     } 
+
+   /*   nav */
+     .title-season h1 {
+        color: rgb(170, 46, 46);
+        margin-bottom: 10%;
+        margin-left: -162%;
+        font-size: 22px;
+    }
+
+    .nav-season {
+        color: rgb(255, 255, 255);
+        text-align: center;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        font-size: 0.7rem; 
+        display: flex;
+        margin: 0;
+        margin-left:5%;
+        font-weight: bold;
+       
+    }
+    .nav-season h3 {
+    margin: 0;
+    margin-left:9%;   
+    }
+/*  main */
+    .title-season-p {
+        color: rgb(255, 255, 255);
+        text-align: left;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 3;  
+        font-size: 0.7rem;
+        margin-top: 7%;
+        margin-left: 13%;
+        width:70%;
+        font-weight: bold;
+    }
+
+    .season-text p {
+        color: rgb(255, 255, 255);
+        font-size: 0.9rem;
+       margin-top: -9%;
+      
+    } 
+    .season-text p {
+        color: white;
+        font-size: 0.7rem;
+        width: 70%;
+        margin-left: 13%;
+        text-align: left;
+    }
+
+    .season-img1 img {
+       display: none;
+    } 
+
+    /* starter */
+    .meal-name {
+        text-align: center;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 6;
+        grid-row-end: 6;  
+    }
+
+    .meal-name h1 {
+        font-size: 1.2rem;
+        margin-top: 16%;
+        margin-left: -1%;
+    }
+    .meal-info {
+       
+        text-align: center;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 7;
+        grid-row-end: 7;
+        width: 70%; 
+    }
+
+    .meal-info p {
+        font-size: 0.9rem;
+  
+    }
+    .meal-img3 {
+        text-align: center;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 8;
+        grid-row-end: 8;  
+    }
+
+    .meal-img3 img {
+        width:70%;
+      margin-left: -1%;
+      margin-top: 10px;
+       
+    }
+/* Main course */
+.meal-name1 {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 9;
+    grid-row-end: 9;  
+   
+}
+
+.meal-name1 h1 {
+    font-size: 1.2rem;
+    margin-left: 18%;
+}
+.meal-info1 {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 10;
+    grid-row-end: 10;
+    width: 70%;  
+}
+.meal-info1 p {
+    font-size: 0.9rem;
+}
+.meal-img2 {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 11;
+    grid-row-end: 11;  
+}
+
+.meal-img2 img {
+    width:70%;
+    margin-left: -1%;
+    margin-top: 10px;
+   
+}
+
+/* Dessert */
+
+.meal-name2 {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 12;
+    grid-row-end: 12;  
+}
+.meal-name2 h1 {
+    font-size: 1.2rem;
+    margin-left: -2%;  
+}
+
+.meal-info2 {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 13;
+    grid-row-end: 13;
+    width: 70%;   
+}
+.meal-info2 p {
+    color: white;
+    font-size: 0.9rem;
+    text-align: left;
+    margin-left: 26%;
+}
+
+.meal-img1 { 
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 14;
+    grid-row-end: 14;  
+}
+.meal-img1 img {
+    width:70%;
+    margin-left: -1%;
+    margin-top: 10px;
+}
+
+   /*  paragraph */
+
+    .meal-info p {
+        color: white;
+        font-size: 0.70rem;
+        text-align: left;
+        width:100%;
+    }
+    .meal-info1 p {
+        color: white;
+        font-size: 0.80rem;
+        text-align: left;
+        width:90%;
+    }
+    .meal-info2 p {
+        color: white;
+        font-size: 0.80rem;
+        text-align: left;
+        margin-left: 20%;
+        width:90%;
+    }
+
+}
+@media only screen and (max-width: 370px) {
+/*   nav */
+.title-season h1 {
+    color: rgb(170, 46, 46);
+    margin-bottom: 10%;
+    margin-left: -162%;
+    font-size: 20px;
+}
+.nav-season {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    font-size: 0.7rem; 
+    display: flex;
+    margin: 0;
+    margin-left: -3%;
+    font-weight: bold;
+   
+}   
+}
+@media only screen and (max-width: 330px) {
+    .nav-season {
+        margin-left: -9%;
+        font-size: 0.6rem; 
+}
+}

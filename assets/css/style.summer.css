@@ -154,13 +154,33 @@ body {
     font-size: 1rem; 
     display: flex;
     margin: 0;
-    margin-left:25%;
-   
+    margin-left: 16vw;
+    margin-right: 16vw;
+
 }
+
+#summer {
+    border: 1px solid #96192B;
+    padding: 1rem;
+
+
+}
+
+
 .nav-season h3 {
 margin: 0;
 margin-left:10%;
     
+}
+.nav-season a {
+    text-decoration: none;
+    color: white;
+}
+.nav-season a:hover {
+    color: #96192B;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+
 }
 
 /* main */
@@ -174,7 +194,8 @@ margin-left:10%;
     grid-row-end: 3;  
     font-size: 0.9rem;
     margin-top: 3%;
-    margin-left: 7%;
+    margin-right: 15%;
+    margin-left: 15%;
 }
 .season-img1 {
     text-align: center;
@@ -198,6 +219,8 @@ margin-left:10%;
     color: white;
     font-size: 1rem;
     margin-top: 2%;
+    margin-right: 15%;
+    margin-left: 15%;
 }
 
 /* Starters */
@@ -476,8 +499,9 @@ margin-left:10%;
 @media only screen and (max-width: 1100px) {
     .nav-season h3 {
         margin: 0;
-        margin-left:6%;   
-        }   
+        margin-right: 5%;
+        margin-left: 5%;
+            }   
 }
 @media only screen and (max-width: 950px) {
     .grid-season {
@@ -508,7 +532,10 @@ margin-left:10%;
         font-size: 1rem; 
         display: flex;
         margin: 0;
-        margin-left:17%;
+        margin-right: 15%;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-left: 15%;
        
     }
     .nav-season h3 {
