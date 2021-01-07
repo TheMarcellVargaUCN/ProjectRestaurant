@@ -162,6 +162,16 @@ margin: 0;
 margin-left:10%;
     
 }
+.nav-season a {
+    text-decoration: none;
+    color: white;
+}
+.nav-season a:hover {
+    color: #96192B;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+
+}
 
 /* main */
 
