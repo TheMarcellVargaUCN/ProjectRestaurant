@@ -1,15 +1,22 @@
 html {
     padding: 0;
     margin: 0;
+<<<<<<< Updated upstream
     background-image: url('../images/BG-thin_line.jpg');
+=======
+    background-image: url(../images/BG-thin_line.jpg);
+>>>>>>> Stashed changes
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Open Sans', sans-serif;
 }
 
+<<<<<<< Updated upstream
 
 
+=======
+>>>>>>> Stashed changes
   * {
     box-sizing: border-box;
 }

@@ -523,6 +523,618 @@ body {
 
 
 
+<<<<<<< Updated upstream
+=======
+/* ------------------------------- confirmation --------------- */
+
+.grid-confirmation{
+    display: grid;
+    height: 100%;
+    margin-top: 5%;
+    margin-right: 15%;
+    margin-left: 15%;
+    background-color:#333; 
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:0.2fr 0.2fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.1fr;
+  }
+
+
+  /* ------ litle-nav ------- */
+  .confirmation-nav-title  {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1; 
+    color: rgb(255, 255, 255);
+    font-size: 1.4rem;
+} 
+
+.confirmation-nav-title h1 {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1; 
+    color: rgb(255, 255, 255);
+    font-size: 1.4rem;
+} 
+
+ .confirmation-nav {
+     margin-top: -1.5%;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;    
+ } 
+ 
+ .confirmation-nav p {
+    font-weight: bold;
+    display: inline-block;
+    font-size:0.8rem;
+    text-decoration: none;
+    padding-left:0.9rem;
+    padding-right:0.9rem;
+ }
+
+ .confirmation-nav p a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+ }
+
+ .confirmation-nav p a:hover {
+   color:#96192B;
+   font-weight: bold;
+   font-size:0.8rem;
+}
+
+.confirmation-nav p .active{
+    color:#96192B;
+    font-weight: bold;
+    font-size:0.8rem;
+ }
+
+
+ .grid-confirmation .title-confirmation{
+    color: white;
+    text-align: center;
+    margin-top: -1.5%;
+    margin-bottom: 3%;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.title-confirmation p {
+    font-size:1rem;
+    color:white;  
+
+}
+.title-confirmation .line {
+    content: "";
+    background: rgb(255, 255, 255);
+    height: 1.5px;
+    width:23% ;
+    margin-top: -1%;
+    margin-left: 39%;
+}
+
+.grid-confirmation .confirmation-img4{
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start:2;
+    grid-row-end: 2;
+    /* background-color:#33333398;  */
+}
+.grid-confirmation .confirmation-img4 img{
+    width: 85%;
+}
+
+.grid-confirmation .confirmation-img5{
+    text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start:2;
+    grid-row-end: 2;
+    /* background-color:#33333398;  */
+}
+.grid-confirmation .confirmation-img5 img{
+    width: 68%;
+}
+
+.grid-confirmation .confirmation-img6{
+    text-align: center;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start:2;
+    grid-row-end: 2;
+    /* background-color:#33333398;  */
+}
+.grid-confirmation .confirmation-img6 img{
+    width: 85%;
+}
+
+.confirmation-text{
+    margin-top: 5%;
+    text-align: left;
+    margin-left: 8%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start:3;
+    grid-row-end: 3;
+}
+
+.confirmation-text h2{
+  font-size: 1.4rem;
+  color: #96192B;
+}
+
+.confirmation-text p{
+    font-size:  1.2rem;
+    width: 60%;
+    color: white;
+  }
+
+  .confirmation-text1{
+    margin-top: 5%;
+    text-align: left;
+    margin-left: 8%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start:4;
+    grid-row-end: 4;
+}
+
+.confirmation-text1 h2{
+  font-size:  1.4rem;
+  color: #96192B;
+}
+
+.confirmation-text1 p{
+    font-size:  1.2rem;
+    width: 60%;
+    color: white;
+  }
+
+  .confirmation-text2{
+    text-align: left;
+    margin-left: 8%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start:5;
+    grid-row-end: 5;
+}
+
+.confirmation-text2 h2{
+  font-size:  1.4rem;
+  color: #96192B;
+}
+
+.confirmation-text2 p{
+    font-size:  1.2rem;
+    width: 60%;
+    color: white;
+  }
+
+  .confirmation-text3 {
+    text-align: left;
+    margin-top: -25%;
+    margin-left: 8%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start:6;
+    grid-row-end: 6;
+}
+
+.confirmation-text3 p{
+font-size: 17px;
+padding: 2%;
+width: 40%;
+color: white;
+border: solid 3px  #96192B;
+}
+
+.confirmation-text4 {
+    width: 60%;
+    text-align: left;
+    margin-top: 5%;
+    margin-left: 35%;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start:3;
+    grid-row-end: 6;
+}
+
+.confirmation-text4 h2{
+    font-size:  1.4rem;;
+    color: #96192B;
+}
+
+.confirmation-text4 p{
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+/* for tablet */
+@media only screen and (max-width: 1024px){
+
+    .confirmation-text3 {
+        text-align: left;
+        margin-top: -40%;
+        margin-left: 8%;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start:6;
+        grid-row-end: 6;
+    }
+    
+    .confirmation-text3 p{
+    font-size: 17px;
+    padding: 2%;
+    width: 40%;
+    color: white;
+    border: solid 3px  #96192B;
+    }
+
+}
+
+
+/* for tablet */
+@media only screen and (max-width: 768px){
+
+    .grid-confirmation{
+        display: grid;
+        height: 100%;
+        margin-top: 5%;
+        margin-right: 15%;
+        margin-left: 15%;
+        background-color:#333333cb;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.2fr 0.2fr 0.3fr 0.3fr 0.3fr;
+      }
+    
+      .grid-confirmation .title-confirmation{
+        color: #96192B;
+        font-size:  1.2rem;
+        text-align: center;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        /* background: cornflowerblue; */
+    }
+    
+    .title-confirmation p{
+        font-size:  1rem;
+        color: white;
+    }
+    
+    .grid-confirmation .confirmation-img4{
+        margin-top:-35%;
+        text-align: center;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start:2;
+        grid-row-end: 2;
+        /* background-color:#33333398;  */
+    }
+    .grid-confirmation .confirmation-img4 img{
+        width: 85%;
+    }
+    
+    .grid-confirmation .confirmation-img5{
+        margin-top:-35%;
+        text-align: center;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start:2;
+        grid-row-end: 2;
+        /* background-color:#33333398;  */
+    }
+    .grid-confirmation .confirmation-img5 img{
+        width: 68%;
+    }
+    
+    .grid-confirmation .confirmation-img6{
+        margin-top:-35%;
+        text-align: center;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start:2;
+        grid-row-end: 2;
+        /* background-color:#33333398;  */
+    }
+    .grid-confirmation .confirmation-img6 img{
+        width: 85%;
+    }
+    
+    .confirmation-text{
+        margin-top: -20%;
+        text-align: left;
+        margin-left: 8%;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start:3;
+        grid-row-end: 3;
+    }
+    
+    .confirmation-text h2{
+      font-size:  1.2rem;
+      color: #96192B;
+    }
+    
+    .confirmation-text p{
+        font-size: 1rem;
+        width: 60%;
+        color: white;
+      }
+    
+      .confirmation-text1{
+        margin-top: -20%;
+        text-align: left;
+        margin-left: 8%;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start:4;
+        grid-row-end: 4;
+    }
+    
+    .confirmation-text1 h2{
+      font-size: 1.2rem;
+      color: #96192B;
+    }
+    
+    .confirmation-text1 p{
+        font-size:  1rem;
+        width: 60%;
+        color: white;
+      }
+    
+      .confirmation-text2{
+        margin-top: -20%;
+        text-align: left;
+        margin-left: 8%;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start:5;
+        grid-row-end: 5;
+    }
+    
+    .confirmation-text2 h2{
+      font-size:  1.2rem;
+      color: #96192B;
+    }
+    
+    .confirmation-text2 p{
+        font-size: 1rem;
+        width: 60%;
+        color: white;
+      }
+    
+      .confirmation-text3 {
+        text-align: left;
+        margin-top: -20%;
+        margin-left: 8%;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start:6;
+        grid-row-end: 6;
+    }
+    
+    .confirmation-text3 p{
+    font-size:  1rem;
+    padding: 2%;
+    width: 40%;
+    color: white;
+    border: solid 3px  #96192B;
+    }
+    
+    .confirmation-text4 {
+        width: 60%;
+        text-align: left;
+        margin-top: -20%;;
+        margin-left: 35%;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start:3;
+        grid-row-end: 6;
+    }
+    
+    .confirmation-text4 h2{
+        font-size:  1.2rem;
+        color: #96192B;
+    }
+    
+    .confirmation-text4 p{
+        font-size:  1rem;
+        color: #ffffff;
+    }
+    
+
+}
+
+
+
+/* for phone */
+@media only screen and (max-width: 500px){
+
+    .grid-confirmation{
+        display: grid;
+        height: 100%;
+        margin-top: 5%;
+        margin-right: 15%;
+        margin-left: 15%;
+        background-color:#333333cb;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.2fr 0.2fr 0.3fr 0.3fr 0.3fr;
+      }
+    
+      .grid-confirmation .title-confirmation{
+        color: #96192B;
+        font-size:  1rem;
+        text-align: center;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        /* background: cornflowerblue; */
+    }
+    
+    .title-confirmation p{
+        font-size:  0.7rem;
+        color: white;
+    }
+    
+    .grid-confirmation .confirmation-img4{
+        margin-top:-45%;
+        text-align: center;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start:2;
+        grid-row-end: 2;
+        /* background-color:#33333398;  */
+    }
+    .grid-confirmation .confirmation-img4 img{
+        width: 85%;
+    }
+    
+    .grid-confirmation .confirmation-img5{
+        margin-top:-45%;
+        text-align: center;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start:2;
+        grid-row-end: 2;
+        /* background-color:#33333398;  */
+    }
+    .grid-confirmation .confirmation-img5 img{
+        width: 68%;
+    }
+    
+    .grid-confirmation .confirmation-img6{
+        margin-top:-45%;
+        text-align: center;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start:2;
+        grid-row-end: 2;
+        /* background-color:#33333398;  */
+    }
+    .grid-confirmation .confirmation-img6 img{
+        width: 85%;
+    }
+    
+    .confirmation-text{
+        margin-top: -60%;
+        text-align: left;
+        margin-left: 8%;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start:3;
+        grid-row-end: 3;
+    }
+    
+    .confirmation-text h2{
+      font-size:  0.8rem;
+      color: #96192B;
+    }
+    
+    .confirmation-text p{
+        font-size: 0.7rem;
+        width: 60%;
+        color: white;
+      }
+    
+      .confirmation-text1{
+        margin-top: -30%;
+        text-align: left;
+        margin-left: 8%;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start:4;
+        grid-row-end: 4;
+    }
+    
+    .confirmation-text1 h2{
+        font-size:  0.8rem;
+      color: #96192B;
+    }
+    
+    .confirmation-text1 p{
+        font-size:  0.8rem;
+        width: 60%;
+        color: white;
+      }
+    
+      .confirmation-text2{
+        margin-top: -30%;
+        text-align: left;
+        margin-left: 8%;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start:5;
+        grid-row-end: 5;
+    }
+    
+    .confirmation-text2 h2{
+        font-size:  0.8rem;
+      color: #96192B;
+    }
+    
+    .confirmation-text2 p{
+        font-size: 0.7rem;
+        width: 60%;
+        color: white;
+      }
+    
+      .confirmation-text3 {
+        text-align: left;
+        margin-top: -30%;
+        margin-left: 8%;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start:6;
+        grid-row-end: 6;
+    }
+    
+    .confirmation-text3 p{
+    font-size:  0.7rem;
+    padding: 2%;
+    width: 50%;
+    color: white;
+    border: solid 3px  #96192B;
+    }
+    
+    .confirmation-text4 {
+        width: 60%;
+        text-align: left;
+        margin-top: -60%;;
+        margin-left: 35%;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start:3;
+        grid-row-end: 6;
+    }
+    
+    .confirmation-text4 h2{
+        font-size:  0.8rem;
+        color: #96192B;
+    }
+    
+    .confirmation-text4 p{
+        font-size:  0.7rem;
+        color: #ffffff;
+    }
+    
+
+}
+
+>>>>>>> Stashed changes
 /* ------------------------------- footer--------------- */
 
 .grid-footer{
