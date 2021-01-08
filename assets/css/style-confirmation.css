@@ -1,22 +1,14 @@
 html {
     padding: 0;
     margin: 0;
-<<<<<<< Updated upstream
     background-image: url('../images/BG-thin_line.jpg');
-=======
-    background-image: url(../images/BG-thin_line.jpg);
->>>>>>> Stashed changes
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
 }
 
-<<<<<<< Updated upstream
-
-
-=======
->>>>>>> Stashed changes
   * {
     box-sizing: border-box;
 }
@@ -320,7 +312,7 @@ body {
 
 .price {
     margin-top: 7%;
-    margin-left: 50%;
+    margin-left: 35%;
     text-align: center;
     grid-column-start: 1;
     grid-column-end: 2;
@@ -468,11 +460,11 @@ body {
 }
 
 .price p{
-    margin-left: -75%;
+    margin-left: -35%;
     }
 .price p{
     font-size: 0.9rem;
-    width: 210%;
+    width: 180%;
     }
 
 }
@@ -606,7 +598,7 @@ body {
     }
     
     .price p{
-        margin-left: -75%;
+        margin-left: -92%;
         }
     .price p{
         font-size: 0.7rem;
