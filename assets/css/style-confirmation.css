@@ -135,7 +135,7 @@ body {
     margin-top: 5%;
     margin-right: 15%;
     margin-left: 15%;
-    background-color:#333; 
+    background-color:#333333cb; 
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows:0.2fr 0.2fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.7fr;
   }
@@ -360,7 +360,7 @@ body {
     margin-top: 5%;
     margin-right: 15%;
     margin-left: 15%;
-    background-color:#333; 
+    background-color:#333333cb;  
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows:0.3fr 0.2fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.7fr;
     }
@@ -477,7 +477,7 @@ body {
         margin-top: 5%;
         margin-right: 15%;
         margin-left: 15%;
-        background-color:#333; 
+        background-color:#333333cb; 
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows:0.3fr 0.2fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.5fr;
         }
@@ -614,7 +614,7 @@ body {
     margin-top: 5%;
     margin-right: 15%;
     margin-left: 15%;
-    background-color:#333; 
+    background-color:#333333cb;  
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows:0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
     } 
