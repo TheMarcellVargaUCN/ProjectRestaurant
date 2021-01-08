@@ -1,0 +1,788 @@
+html {
+    padding: 0;
+    margin: 0;
+    background-image: url('../images/BG-thin_line.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+  * {
+    box-sizing: border-box;
+}
+body {
+   margin:0;
+   padding:0; 
+}
+/* ------------------------------- nav --------------- */
+
+.navbar {
+    width: 100%;
+    position: fixed; 
+    display:flex;
+    margin-top: -5%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #13141A;  
+    color: white;
+    font-size: 0.9rem;
+}
+
+.brand-title {
+    width: 40%;
+    margin-left:3%;
+}
+
+.navbar-links ul {
+    width: 100%;
+    margin:0;
+    margin-left: -10%;
+    padding:0;
+    display:flex;
+}
+.navbar-links li {
+    list-style:none;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: white;
+    padding:1rem;
+    display:block;
+
+}
+
+.navbar-links ul li a:hover {
+   color:  #96192B;
+
+}
+
+.toggle-button {
+    position: absolute;
+    top: .4rem;
+    right:1rem;
+    display:none;
+    flex-direction: column;
+    justify-content: space-between;
+    width:30px;
+    height:10px;
+}
+
+.toggle-button .bar {
+    height:2%;
+    width:60%;
+    background-color: white;
+    border-radius:10px;
+}
+
+
+
+
+
+
+@media (max-width: 500px) {
+  
+    .brand-title img{
+        width: 100%;
+        margin-left:3%;
+        margin-top: 2%;
+    }   
+
+    .toggle-button {
+    display:flex;
+}
+
+.navbar-links ul li a:hover {
+    background-color: wheat;
+    color: black;
+}
+
+.navbar-links {
+    display:none;
+    width:100%;
+   
+}
+.navbar {
+    flex-direction: column;
+    align-items:flex-start;
+}
+.navbar-links ul {
+    flex-direction: column;
+    width:100%;
+    
+}
+.navbar-links li {
+    text-align: center;
+  
+}
+.navbar-links li a {
+    padding: .5rem 1rem;
+    
+}
+.navbar-links.active {
+    display: flex;
+ 
+}
+
+}
+/* ------------------------------- wedding--------------- */
+
+.grid-wedding{
+    display: grid;
+    height: 100%;
+    margin-top: 5%;
+    margin-right: 15%;
+    margin-left: 15%;
+    background-color:#333; 
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:0.2fr 0.2fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.1fr;
+  }
+
+/* ------ litle-nav ------- */
+.wedding-nav-title  {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1; 
+    color: rgb(255, 255, 255);
+    font-size: 1.4rem;
+} 
+
+ .wedding-nav {
+     margin-top: -1.5%;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;    
+ } 
+ 
+ .wedding-nav p {
+    font-weight: bold;
+    display: inline-block;
+    font-size:0.8rem;
+    text-decoration: none;
+    padding-left:0.9rem;
+    padding-right:0.9rem;
+ }
+
+ .wedding-nav p a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+ }
+
+ .wedding-nav p a:hover {
+   color:#96192B;
+   font-weight: bold;
+   font-size:0.8rem;
+}
+
+.wedding-nav p .active{
+    color:#96192B;
+    font-weight: bold;
+    font-size:0.8rem;
+ }
+
+
+
+.grid-wedding .title-wedding{
+    color: white;
+    text-align: center;
+    margin-top: -1.5%;
+    margin-bottom: 3%;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.title-wedding p {
+    font-size:1rem;
+    color:white;  
+
+}
+.title-wedding .line {
+    content: "";
+    background: rgb(255, 255, 255);
+    height: 1.5px;
+    width:23% ;
+    margin-top: -1%;
+    margin-left: 39%;
+}
+
+
+
+.wedding-img1 {
+    text-align: center;
+     grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 3;
+      grid-row-end: 3; 
+}
+
+.wedding-img1 img {
+    width:90%; 
+}
+
+.wedding-img2 {
+    text-align: center;
+    grid-column-start: 2;
+     grid-column-end: 3;
+     grid-row-start: 3;
+     grid-row-end: 3; 
+    
+}
+.wedding-img2 img {
+    width:90%;
+}
+
+.wedding-img2-phone img {
+    display: none;
+    } 
+
+.wedding-img3 {
+    text-align: center;
+     grid-column-start: 3;
+     grid-column-end: 4;
+     grid-row-start: 3;
+     grid-row-end: 3;    
+}
+.wedding-img3 img {
+    width:90%;
+}
+
+
+.wedding-text {
+    text-align: center;
+    grid-column-start: 1;
+     grid-column-end: 4;
+     grid-row-start: 4;
+     grid-row-end: 4; 
+}
+.wedding-text p {
+    font-size:1.1rem;
+    color: white;
+    margin-left:1%;
+    margin-top: 4%;
+    font-style: italic;
+}
+.wedding-text1 {
+    margin-left: 18%;
+    margin-top: 16%;
+    text-align: left;
+    grid-column-start: 1;
+     grid-column-end: 3;
+     grid-row-start: 4;
+     grid-row-end: 6; 
+}
+
+.wedding-text1 p {
+    font-size:  1.1rem;
+    width: 60%;
+    color: white;
+}
+ .wedding-text2 {
+    margin-top: -2%;
+    text-align: left;
+    margin-left: 18%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 7;
+    grid-row-end: 7; 
+} 
+.wedding-text2 p {
+    font-size:  1.1rem;
+    width: 60%;
+    color: white;
+}
+
+.wedding-text3 {
+    margin-top: -1%;
+    margin-bottom: 2%;
+    text-align: left;
+    margin-left: 18%;
+    grid-column-start: 1;
+     grid-column-end: 3;
+     grid-row-start: 8;
+     grid-row-end: 8;    
+}
+.wedding-text3 p {
+    font-size:  1.1rem;
+    width: 60%;
+    color: white;
+}
+.wedding-text4 {
+    text-align: left;
+    margin-left:-23%;
+    margin-top: 8%;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;  
+}
+
+.wedding-text4 p {
+    font-size:  1.1rem;
+    color: rgb(255, 255, 255);
+    width:60%;
+}
+
+.wedding-text5 {
+    margin-top: 1%;
+    text-align: left;
+    margin-left: 18%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 6; 
+}
+
+.wedding-text5 p {
+    font-size:  1.1rem;
+    width: 60%;
+    color: white;
+}
+
+
+.price {
+    margin-left:-23%;
+    text-align: center;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 6; 
+}
+
+.price p{
+    font-size: 17px;
+    padding: 2%;
+    width: 60%;
+    color: white;
+    border: solid 2px  #FFD700;
+    margin-bottom: -10%;
+    }
+
+    .wedding-img4 {
+        margin-left:-23%;
+          text-align: left;
+          grid-column-start: 3;
+          grid-column-end: 3;
+          grid-row-start: 8;
+          grid-row-end: 8; 
+    }
+    
+    .wedding-img4 img {
+        width:65%;
+        margin-top: -10%;
+        margin-bottom: 10%;
+    
+    }
+  
+
+
+/* for tablet */
+@media only screen and (max-width: 768px){
+    
+.grid-wedding{
+    display: grid;
+    height: 100%;
+    margin-top: 5%;
+    margin-right: 15%;
+    margin-left: 15%;
+    background-color:#333; 
+    grid-template-columns: 1fr 1.5fr 1fr;
+    grid-template-rows:0.3fr 0.2fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.1fr;
+    }
+
+.wedding-nav-title  {
+    font-size: 1.2rem;
+} 
+
+.wedding-nav  {
+    margin-top: -3%;
+    }
+ .wedding-nav p {
+    font-size:0.7rem;
+    }
+  
+.wedding-nav p .active{
+    font-size:0.7rem;
+    }
+    
+.grid-wedding .title-wedding{
+    font-size: 0.9rem;
+    }
+    
+.title-wedding p {
+    font-size:0.8rem;
+    color:white;  
+    }
+
+.wedding-img2 img {
+     width:60%;
+    }
+
+.wedding-img2-phone img {
+    display: none;
+    } 
+
+.wedding-text p {
+    font-size:0.9rem;
+        }   
+        
+    
+.wedding-text1 {
+    margin-left: 8%;
+    margin-top: 17%;
+    }
+    
+.wedding-text1 p {
+    font-size: 1rem;
+    width: 58%;
+}
+.wedding-text5 {
+    text-align: left;
+    margin-left: 8%;
+    margin-top: 10%;
+}
+
+.wedding-text5 p {
+    font-size:  1rem;
+    width: 60%;
+    margin-top:0%;
+}
+
+.wedding-text2 {
+    margin-top: -10%;
+    margin-left:8%;
+} 
+
+.wedding-text2 p {
+    font-size: 1rem;
+    width: 59%;
+    color: white;
+}
+.wedding-text3 {
+    margin-top: 1%;
+    margin-left: 8%; 
+}
+
+.wedding-text3 p {
+    font-size:  1rem;
+} 
+
+.wedding-text4 {
+  
+    margin-top: 5%;
+} 
+
+.wedding-text4 p {
+    font-size:  1rem;
+    width: 90%;
+}
+
+.price p{
+    font-size: 0.9rem;
+    width: 80%;
+    }
+
+  .wedding-img4 img {
+      width:85%;
+  }
+}
+
+/* for phone */
+@media only screen and (max-width: 500px){
+    .grid-wedding{
+    display: grid;
+    height: 100%;
+    margin-top: 5%;
+    margin-right: 15%;
+    margin-left: 15%;
+    background-color:#333; 
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:0.3fr 0.2fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.1fr;
+    } 
+
+    .wedding-nav-title h1{
+       font-size:1.2rem;
+    }
+
+    .wedding-nav p {
+        font-size:0.7rem;
+        padding-left:0.5rem;
+        padding-right:0.5rem;
+        }
+      
+    .wedding-nav p .active{
+        margin-top: -6%;
+        font-size:0.7rem;
+        }
+        
+    .grid-wedding .title-wedding{
+        font-size: 0.6rem;
+        margin-top: -4%;
+        }
+        
+    .title-wedding p {
+        margin-left: 20%;
+        width: 60%;
+        font-size:0.7rem;
+        color:white;  
+        }
+    
+    .title-wedding .line {
+        height: 1.2px;
+        width:30% ;
+        margin-top: -1.5%;
+        margin-left: 35%;
+    }
+
+    .wedding-img1 {
+        margin-left: -5%;
+        margin-top: -2%;
+        text-align: center;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 6; 
+        }
+        
+    .wedding-img1 img {
+        width:70%; 
+        }
+
+.wedding-text{
+    margin-top: 30%;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 6; 
+}
+
+.wedding-text p{
+    font-size: 0.8rem;
+    width: 95%;
+}
+
+
+.wedding-text1{
+    margin-top: 30%;
+    text-align: left;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 6; 
+}
+
+.wedding-text1 p{
+    width: 90%;
+    font-size: 0.8rem;
+}
+
+.wedding-text5{
+    margin-top: 2%;
+    text-align: left;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 6;
+    grid-row-end: 6; 
+}
+
+.wedding-text5 p{
+    font-size: 0.8rem;
+    width: 70%;
+}
+
+.wedding-img2 {
+    margin-left: -5%;
+    margin-top: 3%;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 7;
+    grid-row-end: 7; 
+        
+    }
+    .wedding-img2 img {
+    width:70%;}
+
+    .wedding-text2{
+        margin-top: 5%;
+        text-align: left;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 8;
+        grid-row-end: 8; 
+    }
+    
+    .wedding-text2 p{
+        font-size: 0.8rem;
+        width: 93%;
+    }
+
+    .wedding-text3{
+        margin-top: -1%;
+        text-align: left;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 9;
+        grid-row-end: 9; 
+    }
+    
+    .wedding-text3 p{
+        font-size: 0.8rem;
+        width: 93%;
+    }  
+    
+    .price {
+    margin-left:-170%;
+    margin-top: -6%;
+    text-align: center;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 10;
+    grid-row-end: 10; 
+}
+
+.price p{
+    font-size: 0.8rem;
+    padding: 2%;
+    color: white;
+    border: solid 2px  #FFD700;
+    margin-bottom: -10%;
+    width: 85%;
+    }
+
+
+    .wedding-text4{
+        margin-top: 15%;
+        text-align: left;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 11;
+        grid-row-end: 11; 
+    }
+    
+    .wedding-text4 p{
+        font-size: 0.8rem;
+        margin-left: 25%;
+        width: 70%;
+        
+    }
+
+    .wedding-img4 img{
+        display: none;   
+    }
+    .wedding-img3 img{
+        display: none;  
+    }
+ 
+}
+
+
+
+
+/* ------------------------------- footer--------------- */
+
+.grid-footer{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    margin-top: 3%;
+    background-color: #13141A;  
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr;
+  }
+
+  .grid-footer .footer-logo{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    margin-top: 7%;
+    margin-bottom: 7%;
+    margin-left: 55%;
+}
+
+.footer-logo img{
+   width: 80%;
+}
+
+.grid-footer .footer-text{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    text-align: right;
+    margin-right: 50%;
+    color: white;
+    font-size: 0.9em;
+}
+
+/* for big screens */
+@media only screen and (min-width: 2000px){
+
+    .grid-footer .footer-text{
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        font-size: 1.3em;
+        margin-top: 2%;
+        text-align: right;
+        margin-right: 50%;
+        color: white;
+    }
+
+
+}
+
+
+/* for tablet */
+@media only screen and (max-width: 768px){
+
+    .grid-footer .footer-text{
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        text-align: right;
+        font-size: 0.5em;
+        margin-right: 50%;
+        color: white;
+    }
+}
+
+
+/* for phone */
+@media only screen and (max-width: 500px){
+
+    .grid-footer .footer-text{
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        font-size: 0.3em;
+        text-align: right;
+        margin-right: 40%;
+        color: white;
+    }
+
+
+    .grid-footer .footer-logo{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        margin-top: 7%;
+        margin-bottom: 7%;
+        margin-left: 25%;
+    }
+}
