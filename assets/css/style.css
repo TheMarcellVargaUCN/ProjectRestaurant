@@ -327,6 +327,8 @@ footer img {
     row-gap: 30px;
     margin-left: 50%;
     width: 480px;
+    margin-left: auto;
+    margin-right: auto;
     }
 }
 button {
