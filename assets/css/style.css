@@ -89,26 +89,27 @@ body {
         display: none;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 150px 150px;
-        width: 100%;
-        height: 400px;
-        row-gap: 20px;
-        column-gap: 20px;
+        width: 500px;
+        height: 300px;
+        row-gap: 0px;
+        column-gap: 0px;
         margin-top: 50px;
         }
         .navbar-links-mobile button {
-            margin-left: 20px;
+            margin: 0px;
             background-color: transparent;
             border: 2px solid white;
-            width: 350px;
-            height: 150px;
+            width: 180px;
+            height: 100px;
+            justify-self: center;
         }
         .navbar-links-mobile h3 {
             color: white;
-            font-size: 30px;
+            font-size: 20px;
             text-align: center;
             margin: 0px;
         }
-        .navbar-links-mobile img {
+        /* .navbar-links-mobile img {
         width: 300px;
         margin-left: auto;
         margin-right: auto;
@@ -116,7 +117,7 @@ body {
         grid-column-end: 3;
         align-self: center;
         justify-self: center;
-        }
+        } */
         
     .navbar-links-mobile.active {
         display: grid;

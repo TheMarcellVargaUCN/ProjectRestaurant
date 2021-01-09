@@ -6,6 +6,7 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
 }
 /* ------------------------------- header--------------- */
 * {
@@ -187,13 +188,12 @@ body {
     padding-left: 10%;
     margin-top: 5%;
     text-align: left;
-    /* background: rgb(4, 14, 31); */
 }
 
 .grid-about .about-img1 p{
     font-size: 1rem;
     color: white;
-    margin-top: 25%;
+    margin-top: 5%;
 }
 
 
