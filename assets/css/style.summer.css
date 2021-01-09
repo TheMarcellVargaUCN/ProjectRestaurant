@@ -11,15 +11,17 @@ hr {
     width:240px;
     color:#FFD700;
 }
+
+
 .grid-season {
     display: grid;
     height: 100%;
     margin-top: 5%;
     margin-right: 15%;
     margin-left: 15%;
-    background-color:#333333cb;  
+    background-color: #333333cb;  
     grid-template-columns: 2fr 1fr 1fr;
-    grid-template-rows:0.2fr 0.2fr 0.3fr 0.3fr 0.3fr 0.2fr 0.3fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
+    grid-template-rows: 0.2fr 0.2fr 0.3fr 0.3fr 0.3fr 0.2fr 0.3fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
   }
   * {
     box-sizing: border-box;

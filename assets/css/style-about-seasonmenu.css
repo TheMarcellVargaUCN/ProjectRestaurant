@@ -11,6 +11,8 @@ html {
 
 /* ------------------------------- Header--------------- */
 
+
+
 * {
     box-sizing: border-box;
 }
@@ -20,29 +22,25 @@ body {
 }
 
 .navbar {
-    z-index: 2;
-    width: 100%;
-    position: fixed; 
     display:flex;
-    margin-top: -0.01%;
     justify-content: space-between;
     align-items: center;
-    background-color: #13141A;
+    background-color: #000000;
     color: white;
-    font-size: 0.9rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
 }
 
-.brand-title {
-    width: 40%;
-    margin-left:3%;
+#logo {
+    width: 150px;
+    margin-left: 30px;
 }
 
 .navbar-links ul {
-    width: 100%;
     margin:0;
-    margin-left: -10%;
     padding:0;
     display:flex;
+    margin-right:20px;
 }
 .navbar-links li {
     list-style:none;
@@ -57,49 +55,46 @@ body {
 }
 
 .navbar-links ul li a:hover {
-   color:  #96192B;
+    border: 1px solid #96192B;
 
 }
 
 .toggle-button {
     position: absolute;
-    top: .8rem;
-    right:1.5rem;
+    top: 1.55rem;
+    right:1rem;
     display:none;
     flex-direction: column;
     justify-content: space-between;
     width:30px;
-    height:20px;
+    height:21px;
 }
 
 .toggle-button .bar {
-    height:2%;
-    width:90%;
+    height:3px;
+    width:100%;
     background-color: white;
     border-radius:10px;
 }
 
 
-
-
-
-
-@media (max-width: 700px) {
-  
-    .brand-title img{
-        width: 100%;
-        height: 4vh;
-        margin-left:3%;
-        margin-top: 2%;
-    }   
-
+@media (max-width: 620px) {
+   
     .toggle-button {
     display:flex;
 }
 
+#logo{
+    width: 150px;
+    margin-left: 30px;
+}
+
 .navbar-links ul li a:hover {
-    background-color: wheat;
-    color: black;
+    background-color: #96192B;
+    color: #191C27;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+
 }
 
 .navbar-links {
@@ -128,12 +123,94 @@ body {
     display: flex;
  
 }
+}
+
+.title-season {
+    margin-top: 15%;
+    text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    font-size: 1rem;
 
 }
 
+.title-season h1 {
+    color: rgb(255, 255, 255);
+    margin-bottom: 22%;
+    margin-left: -76%;
+}
+
+.nav-season {
+    color: white;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    font-size: 1rem; 
+    display: flex;
+    margin: 0;
+    margin-left: 16vw;
+    margin-right: 16vw;
+
+}
+
+#seasonnavhighlight {
+    border: 1px solid #96192B;
+    padding: 1rem;
+
+
+}
+
+
+.nav-season h3 {
+margin: 0;
+margin-left:10%;
+    
+}
+.nav-season a {
+    text-decoration: none;
+    color: white;
+}
+.nav-season a:hover {
+    color: #96192B;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+
 /* ------------------------------- Main page--------------- */
 
-/* ------------------------------- Season menu bar--------------- */
+.title-season-p {
+    color: white;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 3;  
+    font-size: 0.9rem;
+    margin-top: 3%;
+}
+
+.season-img1 {
+    text-align: center;
+      grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 4;  
+
+}
+
+#topimage {
+    width: 55vw;
+    height: auto;
+}
+
+
+/* ------------------------------- Main page - Season menu bar--------------- */
 
 
 .seasonmenu {
@@ -209,6 +286,7 @@ body {
   }
 
   .seasonmenuintro { grid-area: seasonmenuintro; }
+  .seasonmenuintrotext { grid-area: seasonmenuintrotext; }
   .starters { grid-area: starters; }
   .startersimage { grid-area: startersimage; }
   .maincourses { grid-area: maincourses; }
@@ -218,7 +296,7 @@ body {
 
 
 .seasonmenubox h2 {
-    margin-left: 1vw;
+    margin-left: 5vw;
     color: white;
 }
 
@@ -227,7 +305,7 @@ body {
     color: white;
 }
 
-.seasonmenubox img {
+.seasonmenu img {
     width: 25vw;
     height: auto;
     margin-top: 5vh;
@@ -235,6 +313,16 @@ body {
     display: inline-block;
 
 }
+
+.season-text {
+    text-align: center;
+}
+
+.season-text {
+    font-size: 1rem;
+    margin-top: 2%;
+}
+
 
 .starters {
     border-bottom: 3px white solid;
@@ -292,7 +380,6 @@ body {
 /* ------------------------------- Season menu--------------- */
 
 
-
 .seasonmenubox {
     text-align: left;
     display: grid;
@@ -302,7 +389,7 @@ body {
     padding-left: 5vw;
     padding-right: 5vw;
     background-color:#333333cb; 
-    grid-gap: 5vw;
+    grid-gap: 50vw;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
 
