@@ -1,12 +1,11 @@
 html {
-    padding: 0;
-    margin: 0;
     background-image: url('../images/BG-thin_line.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Open Sans', sans-serif;
     color: white;
+    line-height: 1.5rem;
 }
 
 /* ------------------------------- Header--------------- */
@@ -145,15 +144,11 @@ body {
 .nav-season {
     color: white;
     text-align: center;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 2;
     font-size: 1rem; 
     display: flex;
     margin: 0;
-    margin-left: 16vw;
-    margin-right: 16vw;
+    margin-left: 14vw;
+    margin-right: 14vw;
 
 }
 
@@ -230,12 +225,22 @@ margin-left:10%;
 .seasonmenubox p {
 }
 
-.seasonnavbar-links li {
+.nav-season {
+    color: white;
+    text-align: center;
+    font-size: 1rem; 
+    display: flex;
+    margin: 0;
+    margin-left: 16vw;
+    margin-right: 16vw;
+}
+
+.nav-season li {
     display: inline-block;
     padding-right: 30px;
   }
   
-.seasonnavbar-links li a {
+.nav-season li a {
     text-align: center;
     padding: 10px 10px;
     float: right;
@@ -350,13 +355,13 @@ margin-left:10%;
     margin: 5vh;
 }
 
-.seasonnavbar-links li {
+.nav-season li {
     display: inline-block;
     padding-right: 30px;
   }
 
   
-.seasonnavbar-links li a {
+.nav-season li a {
     text-align: center;
     padding: 10px 10px;
     float: right;
@@ -469,12 +474,12 @@ margin-left:10%;
     margin: 5vh;
 }
 
-.seasonnavbar-links li {
+.nav-season li {
     display: inline-block;
     padding-right: 30px;
   }
   
-.seasonnavbar-links li a {
+.nav-season li a {
     text-align: center;
     padding: 10px 10px;
     float: right;
