@@ -79,13 +79,16 @@ body {
 
 @media (max-width: 620px) {
    
-    .toggle-button {
-    display:flex;
+.toggle-button {
+    display: flex;
 }
 
 #logo{
-    width: 150px;
-    margin-left: 30px;
+    width: 200px;
+    height: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-right: 25px;
 }
 
 .navbar-links ul li a:hover {
@@ -104,10 +107,24 @@ body {
 .navbar {
     flex-direction: column;
     align-items:flex-start;
+    height: auto;
+    
 }
+
+header {
+    margin: 0;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    z-index: 7;
+    overflow: hidden;
+}
+
 .navbar-links ul {
     flex-direction: column;
-    width:100%;
+    width: 100%;
+    height: ;
     
 }
 .navbar-links li {
@@ -127,10 +144,6 @@ body {
 
 .title-season {
     text-align: center;
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 1;
     font-size: 1rem;
     margin: 5vh;
 
@@ -156,9 +169,6 @@ body {
     border: 1px solid #96192B;
 }
 
-.nav-season li {
-    padding-left: 2.3vw;
-}
     
 .nav-season a {
     text-decoration: none;
@@ -177,17 +187,18 @@ body {
 .title-season-p {
     color: white;
     text-align: center;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 3;
-    grid-row-end: 3;  
     font-size: 0.9rem;
     margin-top: 3%;
 }
 
+.season-img1 {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    display: inline-block;
+}
 
 #topimage {
-    width: 55vw;
+    width: 60vw;
     height: auto;
 }
 
@@ -199,29 +210,20 @@ body {
     text-align: center;
 }
 
-.seasonmenubox {
-    background-color: #333333cb; 
-    display: inline-block;
-}
-
-
-.seasonmenubox p {
-}
 
 .nav-season {
     color: white;
     text-align: center;
     font-size: 1rem; 
     display: flex;
-    margin: 0;
-    margin-left: 10vw;
-    margin-right: 10vw;
+    margin: auto;
 }
 
 .nav-season li {
     display: inline-block;
-    padding-right: 2vw;
-  }
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
   
 .nav-season li a {
     text-align: center;
@@ -230,10 +232,11 @@ body {
   }
   
 .seasonmenu ul {
-    margin: 0px;
-    padding: 0px;
+    margin: auto;
+    padding: 0;
     overflow: hidden;
-  }  
+    width: 100%;
+}  
 
 .seasonmenu li a:hover {
     color: red;
@@ -248,8 +251,7 @@ body {
 
 .seasonmenuintro {
     text-align: center;
-    font-size: 125%;
-    margin-bottom: 10vh;
+    margin-bottom: 5vh;
 }
 
 
@@ -257,10 +259,13 @@ body {
     text-align: left;
     display: grid;
     height: auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
     margin-right: 15%;
     margin-left: 15%;
     padding-left: 5vw;
     padding-right: 5vw;
+    padding-bottom: 5vh;
     background-color:#333333cb; 
     grid-gap: 5vw;
     grid-template-columns: (2, 1fr);
@@ -284,22 +289,43 @@ body {
 
 
 .seasonmenubox h2 {
-    margin-left: 5vw;
     color: white;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    font-size: 150%;
+
 }
 
 .seasonmenubox p {
-    padding-bottom: 5vh;
     color: white;
+    margin-left: 1vw;
+    margin-right: 1vw;
+
 }
 
-.seasonmenu img {
+
+.startersimage img {
     width: 25vw;
     height: auto;
     margin-top: 5vh;
     margin-bottom: 5vh;
     display: inline-block;
+} 
 
+.maincoursesimage img {
+    width: 25vw;
+    height: auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    display: inline-block;
+}
+
+.dessertsimage img {
+    width: 25vw;
+    height: auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    display: inline-block;
 }
 
 .season-text {
@@ -310,14 +336,6 @@ body {
     font-size: 1rem;
 }
 
-
-.starters {
-    border-bottom: 3px white solid;
-}
-
-.maincourses {
-    border-bottom: 3px white solid;
-}
 
 
 @media (max-width: 700) {
