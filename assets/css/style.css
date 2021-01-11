@@ -141,17 +141,15 @@ main {
     height: 560px;
     background-image: url('../images/mainimg.jpg');
     background-size: cover;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 5%;
     position: relative;
     zoom: 80%;
-    margin-top: 100px;
+    margin: 100px auto 5% auto;
     display: grid;
-    grid-template-rows: 70px 200px;
+    grid-template-rows: 50px 200px;
     padding: 110px;
+    border: 3px solid white;
 }
-main h3 {
+main h1 {
     font-size: 35px;
     color:white;
     justify-self: center;
@@ -162,6 +160,7 @@ main p {
     color: white;
     text-align: center;
     justify-self: center;
+    line-height: 1.45;
 } 
 .buttons {
     margin-right: auto;
