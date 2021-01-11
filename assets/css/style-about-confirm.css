@@ -77,10 +77,7 @@ body {
 }
 
 
-
-
-
-
+/* for phone */
 @media (max-width: 500px) {
   
     .brand-title img{
@@ -138,20 +135,20 @@ body {
     background-color:#333333cb; 
     grid-gap: 0px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.2fr 1fr;
+    grid-template-rows: 0.3fr 1fr 0.3fr;
     padding-bottom: 5%;
   }
 
-  .grid-about .title-about-all{
+.title-about-all{
     text-align: center;
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 1;
     /* background: cornflowerblue; */
 }
 
-.grid-about .title-about{
+.title-about{
     color: #96192B;
     text-align: center;
     grid-column-start: 1;
@@ -166,260 +163,132 @@ body {
     color: white;
 }
 
-.grid-about .text-about{
-    text-align: left;
-    font-size: 1rem;
-    color: white;
+
+.text-about{
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 2;
-    padding-right: 10%;
-    padding-left: 35%;
+    margin-left: 35%;
+    width: 60%;
+    text-align: left;
+    font-size: 1rem;
+    color: white;
     /* background: rgb(26, 56, 112); */
 }
 
-
-.grid-about .about-img1{
-    grid-column-start: 2;
-    grid-column-end: 2;
+.content-left{
+     grid-column-start: 2;
+    grid-column-end: 4;
     grid-row-start:2;
-    grid-row-end: 2;
-    padding-right:35%;
-    padding-left: 10%;
-    margin-top: 5%;
-    text-align: left;
+    grid-row-end:2;
 }
 
-.grid-about .about-img1 p{
+.about-text1 p{  
+    margin-top: 5%;
+    margin-left: 8%;
+    width: 60%;
+    text-align: left;
     font-size: 1rem;
     color: white;
-    margin-top: 5%;
+} 
+
+.about-img1 img{
+    margin-left: 7%;
+    margin-top: 3%;
+    width: 60%;
 }
 
-
-.grid-about .about-img1 img{
-    width: 100%;
-}
-
-.grid-about .about-img2{
+.about-img2{
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start:3;
     grid-row-end: 3;
-    padding-right:8%;
-    padding-left: 32%;
+    margin-top: 0%;
+    margin-left: 35%;
     /* background-color:#33333398;  */
 }
 
-.grid-about .about-img2 img{
-    width: 100%;
+.about-img2 img{
+    width: 85%;
 }
 
-.grid-about .about-img3{
+.about-img3{
     grid-column-start: 2;
-    grid-column-end: 2;
+    grid-column-end: 4;
     grid-row-start:3;
     grid-row-end: 3;
-    padding-right:32%;
-    padding-left: 8%;
+    margin-top: 12%;
+    margin-left: 8%;
+   
     /* background-color:#33333398;  */
 }
-.grid-about .about-img3 img{
-    width: 100%;
+.about-img3 img{
+    width: 66%;
 }
+
+
 /* for big screen */
-@media only screen and (min-width: 1400px){
-    .grid-about .title-about{
-        color: #96192B;
-        text-align: center;
-        grid-column-start: 1;
-        grid-column-end: 3;
-        grid-row-start: 1;
-        grid-row-end: 1;
+ @media only screen and (min-width: 2000px){
+
+    .title-about-all{
         font-size: 1.5rem;
-        /* background: cornflowerblue; */
     }
-    
-    .title-about p{
+
+    .title-about-p{
         font-size: 1.3rem;
-        color: white;
     }
 
-    .grid-about .text-about{
-        text-align: left;
-        font-size: 1rem;
-        color: white;
-        width: 100%;
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 2;
-        grid-row-end: 2;
-        padding-right: 10%;
-        padding-left: 33%;
-        /* background: rgb(26, 56, 112); */
+    .text-about{
+        font-size: 1.3rem;
     }
-    
-.grid-about .about-img1{
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start:2;
-    grid-row-end: 2;
-    padding-right:35%;
-    padding-left: 10%;
-    text-align: left;
-    font-size: 1rem;
-    color: white;
-    /* background: rgb(4, 14, 31); */
-}
-.grid-about .about-img1 p{
-    font-size: 1rem;
-    margin-top: 2%;
-    color: white;
-    /* background: rgb(4, 14, 31); */
-}
-
-    
-}
-
-
+    .about-text1 p{
+        margin-top: 8%;
+        font-size: 1.3rem;
+    }
+    .about-img2{
+        margin-top: -2%;
+    } 
+}  
 
 /* for big screen */
-@media only screen and (min-width: 2000px){
+@media only screen and (max-width: 1024px){
 
-    .grid-about .title-about{
-        color: #96192B;
-        text-align: center;
-        grid-column-start: 1;
-        grid-column-end: 3;
-        grid-row-start: 1;
-        grid-row-end: 1;
-        font-size: 1.9rem;
-        /* background: cornflowerblue; */
-    }
-    
-    .title-about p{
-        font-size: 1.5rem;
-        color: white;
+    .title-about-all{
+        font-size: 1.3rem;
     }
 
-    .grid-about .text-about{
-        text-align: left;
-        font-size: 1.7rem;
-        color: white;
-        width: 90%;
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 2;
-        grid-row-end: 2;
-        padding-right: 10%;
-        padding-left: 35%;
-        /* background: rgb(26, 56, 112); */
+    .title-about-p{
+        font-size: 1rem;
     }
-    
-.grid-about .about-img1{
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start:2;
-    grid-row-end: 2;
-    padding-right:35%;
-    padding-left: 10%;
-    text-align: left;
-    font-size: 1.7rem;
-    color: white;
-    /* background: rgb(4, 14, 31); */
-}
-.grid-about .about-img1 p{
-    font-size: 1.7rem;
-    margin-top: 2%;
-    color: white;
-    /* background: rgb(4, 14, 31); */
-}
+
+    .text-about{
+        font-size: 0.9rem;
+    }
+    .about-text1 p{
+        margin-top: 25%;
+        font-size: 0.9rem;
+    }
+}  
 
 
-}
 
 /* for tablet */
 @media only screen and (max-width: 768px){
+    .title-about-all{
+        font-size: 1rem;
+    }
 
-      .grid-about .title-about{
-        color: #96192B;
-        text-align: center;
-        grid-column-start: 1;
-        grid-column-end: 3;
-        grid-row-start: 1;
-        grid-row-end: 1;
-        font-size: 1.2rem;
-        /* background: cornflowerblue; */
-    }
-    
-    .title-about p{
-        font-size: 0.7rem;
-        color: white;
-    }
-    
-    .grid-about .text-about{
-        text-align: left;
+    .title-about-p{
         font-size: 0.8rem;
-        color: white;
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 2;
-        grid-row-end: 2;
-        padding-right: 8%;
-        padding-left: 32%;
-        /* background: rgb(26, 56, 112); */
     }
 
-    
-    .grid-about .about-img1{
-        margin-top: 5%;
-        grid-column-start: 2;
-        grid-column-end: 2;
-        grid-row-start:2;
-        grid-row-end: 2;
-        padding-right:35%;
-        padding-left: 10%;
-        text-align: left;
-        /* background: rgb(4, 14, 31); */
+    .text-about{
+        font-size: 0.7rem;
     }
-
-    .grid-about .about-img1 p{
-       margin-top: 55%;
-       font-size: 0.8rem;
-       color: white;
-       margin-top: 15%;
-    }
-    
-    .grid-about .about-img1 img{
-        width: 100%;
-    }
-    
-    .grid-about .about-img2{
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start:3;
-        grid-row-end: 3;
-        padding-right:8%;
-        padding-left: 32%;
-        /* background-color:#33333398;  */
-    }
-    
-    .grid-about .about-img2 img{
-        width: 100%;
-    }
-    
-    .grid-about .about-img3{
-        grid-column-start: 2;
-        grid-column-end: 2;
-        grid-row-start:3;
-        grid-row-end: 3;
-        padding-right:32%;
-        padding-left: 8%;
-        /* background-color:#33333398;  */
-    }
-    .grid-about .about-img3 img{
-        width: 100%;
+    .about-text1 p{
+        margin-top: 25%;
+        font-size: 0.7rem;
     }
 
 }
@@ -428,97 +297,79 @@ body {
 @media only screen and (max-width: 500px){
 
     .grid-about{
-        display: grid;
-        height: auto;
-        margin-top: 5%;
-        margin-right: 15%;
-        margin-left: 15%;
-        background-color:#333333cb; 
         grid-template-columns: 1fr;
-        grid-template-rows: 0.2fr 0.5fr 0.5fr 0.5fr;
+        grid-template-rows: 0.3fr 0.3fr 0.5fr 0.5fr 0.2fr ;
       }
 
-
-      .grid-about .title-about{
-        color: #96192B;
-        font-size: 0.9rem;
-        text-align: center;
-        grid-column-start: 1;
-        grid-column-end: 3;
-        grid-row-start: 1;
-        grid-row-end: 1;
-        /* background: cornflowerblue; */
+    .title-about{
+        font-size: 1.2rem;
+    }
+     
+    .title-about-p{
+        font-size: 0.8rem;
     }
     
-    .title-about p{
-        font-size: 0.6rem;
-        color: white;
-    }
-    
-    .grid-about .text-about{
-        text-align: left;
-        width: 90%;
-        font-size: 0.5rem;
-        color: white;
+     .about-img2{
         grid-column-start: 1;
         grid-column-end: 4;
-        grid-row-start: 2;
+        grid-row-start:2;
         grid-row-end: 2;
-        margin-top: -2%;
-        margin-right: 55%;
-        margin-left: -5%;
-        /* background: rgb(26, 56, 112); */
+        margin-top: 0%;
+        margin-left: 20%;
     }
     
-    .grid-about .about-img1{
-        margin-top: 1%;
-        grid-column-start: 1;
-        grid-column-end: 4;
-        grid-row-start:3;
-        grid-row-end: 3;
-        text-align: center;
-        /* background: rgb(4, 14, 31); */
+    .about-img2 img{
+        width: 75%;
     }
 
-    .grid-about .about-img1 p{
-        text-align: left;
-        width: 90%;
-       margin-top: 5%;
-       margin-left: 30%;
-       font-size: 0.5rem;
-       color: white;
-    }
-    
-    .grid-about .about-img1 img{
-        width: 90%;
-        margin-left: 30%;
-    }
-    
-    .grid-about .about-img2{
+    .text-about{
         grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 3;
+        margin-left: 15%;
+        margin-top: 5%;
+        width: 70%;
+        font-size: 0.7rem;
+    }
+
+    .content-left{
+         grid-column-start: 1;
         grid-column-end: 4;
         grid-row-start:4;
-        grid-row-end: 4;
+        grid-row-end:4;
     }
     
-    .grid-about .about-img2 img{
-        width: 90%;
-        margin-left: -14%;
-    }
+    .about-text1 p{  
+        margin-top: 5%;
+        margin-left: 15%;
+        width: 70%;
+        text-align: left;
+        font-size: 0.7rem;
+    } 
     
-    .grid-about .about-img3{
-        grid-column-start: 1;
+    .about-img1 img{
+        margin-left: 15%;
+        margin-top: 5%;
+        width: 70%;
+    }
+ 
+    .about-img3{
+        grid-column-start:1;
         grid-column-end: 4;
         grid-row-start:5;
-        grid-row-end: 5;
-        padding-right:32%;
-        padding-left: 8%;
+        grid-row-end:5;
+        margin-top: 5%;
+        margin-left: 15%;
+       
+        /* background-color:#33333398;  */
     }
-    .grid-about .about-img3 img{
-        width: 90%;
-        margin-top: 2%;
-        margin-left: 27%;
+    .about-img3 img{
+        width: 80%;
     }
+
+
+
 
 }
 
