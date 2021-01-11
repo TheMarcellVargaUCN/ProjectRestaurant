@@ -277,10 +277,10 @@ main p {
     font-size: 40px;
     width: 800px;
     position: absolute;
-    text-align: center;
+    text-align: left;
     color: white;
-    margin-top: 420px;
-    margin-left: 10%;
+    margin-top: 460px;
+    margin-left: 20px;
 } 
 footer img {
     width: 200px;
