@@ -203,7 +203,7 @@ header {
 }
 
 
-/* ------------------------------- Main page - Season menu bar--------------- */
+/* ------------------------------- Main page - Season menu bar --------------- */
 
 
 .seasonmenu {
@@ -243,7 +243,7 @@ header {
   }
   
 .seasonmenu li a {
-  text-decoration: none;
+  text-deoration: none;
   color: white;
   }
 
@@ -336,9 +336,13 @@ header {
     font-size: 1rem;
 }
 
+/* ------------------------------- Responsivity --------------- */
 
 
-@media (max-width: 700) {
+
+
+
+@media (max-width: ) {
 
     .seasonmenu {
     text-align: center;
@@ -561,10 +565,10 @@ header {
 
 /* ------------------------------- footer--------------- */
 
+@media only screen and (min-width: 768px){
+
 .grid-footer{
     display: grid;
-    height: 100%;
-    width: 100%;
     margin-top: 3%;
     background-color: #13141A;  
     grid-template-columns: 1fr 1fr;
@@ -572,45 +576,57 @@ header {
   }
 
   .grid-footer .footer-logo{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 1;
-    margin-top: 7%;
-    margin-bottom: 7%;
-    margin-left: 55%;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    margin-left: 5vw;
 }
 
 .footer-logo img{
-   width: 80%;
+   width: 60%;
+   float: right;
+   padding-right: 5vw;;
 }
 
 .grid-footer .footer-text{
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 1;
     text-align: right;
     margin-right: 50%;
     color: white;
     font-size: 0.9em;
 }
 
-/* for big screens */
-@media only screen and (min-width: 2000px){
+}
 
+/* for big screens */
+
+@media only screen and (min-width: 1700px){
+
+    .grid-footer{
+        display: grid;
+        margin-top: 3%;
+        background-color: #13141A;  
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr;
+      }
+    
+      .grid-footer .footer-logo{
+        margin-top: 2.5vw;
+        margin-bottom: 2.5vw;
+        margin-left: 5vw;
+    }
+    
+    .footer-logo img{
+       width: 60%;
+       float: right;
+       padding-right: 5vw;;
+    }
+    
     .grid-footer .footer-text{
-        grid-column-start: 2;
-        grid-column-end: 4;
-        grid-row-start: 1;
-        grid-row-end: 1;
-        font-size: 1.3em;
-        margin-top: 2%;
         text-align: right;
         margin-right: 50%;
         color: white;
+        font-size: 1.3em;
     }
-
+    
 
 }
 
@@ -618,15 +634,32 @@ header {
 /* for tablet */
 @media only screen and (max-width: 768px){
 
-    .grid-footer .footer-text{
-        grid-column-start: 2;
-        grid-column-end: 4;
-        grid-row-start: 1;
-        grid-row-end: 1;
-        text-align: right;
-        font-size: 0.5em;
-        margin-right: 50%;
+    .grid-footer{
+        display: grid;
+        background-color: #13141A;  
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 0.2fr;
+      }
+    
+      .grid-footer .footer-text{
+        text-align: center;
+        margin-right: 25%;
+        margin-left: 25%;
         color: white;
+        font-size: 0.5em;
+    }
+    
+
+    .footer-logo {
+        height: auto;
+        margin-top: 5vw;
+        margin-left: 35vw;
+        margin-right: 35vw;
+     }
+
+    .footer-logo img{
+       width: 100%;
+       height: auto;
     }
 }
 
@@ -634,27 +667,36 @@ header {
 /* for phone */
 @media only screen and (max-width: 500px){
 
-    .grid-footer .footer-text{
-        grid-column-start: 2;
-        grid-column-end: 4;
-        grid-row-start: 1;
-        grid-row-end: 1;
-        font-size: 0.3em;
-        text-align: right;
-        margin-right: 40%;
-        color: white;
-    }
-
-
-    .grid-footer .footer-logo{
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 1;
-        grid-row-end: 1;
-        margin-top: 7%;
-        margin-bottom: 7%;
+    .grid-footer{
+        display: grid;
+        background-color: #13141A;  
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 0.2fr;
+      }
+    
+      .grid-footer .footer-text{
+        text-align: center;
+        margin-right: 25%;
         margin-left: 25%;
+        color: white;
+        font-size: 0.9em;
     }
+    
+
+    .footer-logo {
+        height: auto;
+        margin-top: 5vw;
+        margin-left: 25vw;
+        margin-right: 25vw;
+        display: inline-block;
+     }
+
+    .footer-logo img{
+       width: 100%;
+       height: auto;
+    }
+    
+    
 }
 
 
