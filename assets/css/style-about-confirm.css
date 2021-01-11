@@ -139,6 +139,7 @@ body {
     grid-gap: 0px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.2fr 1fr;
+    padding-bottom: 5%;
   }
 
   .grid-about .title-about-all{
@@ -249,13 +250,13 @@ body {
         text-align: left;
         font-size: 1rem;
         color: white;
-        width: 90%;
+        width: 100%;
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row-start: 2;
         grid-row-end: 2;
         padding-right: 10%;
-        padding-left: 35%;
+        padding-left: 33%;
         /* background: rgb(26, 56, 112); */
     }
     
