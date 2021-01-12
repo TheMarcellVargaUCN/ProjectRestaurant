@@ -246,7 +246,7 @@ footer {
         margin-right: 10%;
         margin-left: 10%; 
         grid-template-columns: 1fr;
-        grid-template-rows: 100px 150px 150px 400px;
+        grid-template-rows: 100px 150px 150px 430px;
       }
       hr {
         margin-left: auto;
@@ -259,6 +259,7 @@ footer {
         grid-row-start: 4;
         width: 71%;
         height: 200px;
+        margin-top: 20px;
     }
     .title-contact {
         margin: 0;
