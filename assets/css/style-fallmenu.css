@@ -152,6 +152,7 @@ header {
 .title-season h1 {
     color: white;
     margin-top: 5vw;
+    font-size: 300%;
 }
 
 .nav-season {
@@ -205,6 +206,7 @@ header {
 
 /* ------------------------------- Main page - Season menu bar --------------- */
 
+@media only screen and (min-width: 800px) {
 
 .seasonmenu {
     text-align: center;
@@ -250,7 +252,6 @@ header {
 
 .seasonmenuintro {
     text-align: center;
-    margin-bottom: 5vh;
 }
 
 
@@ -289,41 +290,64 @@ header {
 
 .seasonmenubox h2 {
     color: white;
-    margin-left: 1vw;
-    margin-right: 1vw;
-    font-size: 150%;
+    font-size: 200%;
+    margin-bottom: 2.5vh;
 
 }
 
 .seasonmenubox p {
     color: white;
-    margin-left: 1vw;
-    margin-right: 1vw;
 
 }
 
+.starters {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+}
+
+.maincourses {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+}
+
+.desserts {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+}
 
 .startersimage img {
     width: 25vw;
     height: auto;
-    margin-top: 5vh;
+    margin-top: 10vh;
     margin-bottom: 5vh;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
     display: inline-block;
 } 
 
 .maincoursesimage img {
     width: 25vw;
     height: auto;
-    margin-top: 5vh;
+    margin-top: 10vh;
     margin-bottom: 5vh;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
     display: inline-block;
 }
 
 .dessertsimage img {
     width: 25vw;
     height: auto;
-    margin-top: 5vh;
+    margin-top: 10vh;
     margin-bottom: 5vh;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
     display: inline-block;
 }
 
@@ -335,16 +359,21 @@ header {
     font-size: 1rem;
 }
 
+}
 
 /* ------------------------------- Season menu - Responsive--------------- */
 
-@media only screen and (min-width: 620px) {
+@media only screen and (max-width: 620px) {
 
 
     .title-season {
         margin-left: 5vw;
         margin-right: 5vw;
         margin-bottom: 5vh;
+    }
+
+    .title-season h1 {
+        line-height: 1.2;
     }
 
     .title-season-p {
@@ -462,8 +491,8 @@ header {
     .startersimage img {
         width: 100%;
         height: auto;
-        margin-top: 5vh;
-        margin-bottom: 5vh;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
         padding-left: 5vw;
         padding-right: 5vw;
         display: inline-block;
@@ -473,8 +502,8 @@ header {
         
         width: 100%;
         height: auto;
-        margin-top: 5vh;
-        margin-bottom: 5vh;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
         padding-left: 5vw;
         padding-right: 5vw;
         display: inline-block;
@@ -483,8 +512,8 @@ header {
     .dessertsimage img {
         width: 100%;
         height: auto;
-        margin-top: 5vh;
-        margin-bottom: 5vh;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
         padding-left: 5vw;
         padding-right: 5vw;
         display: inline-block;
@@ -502,7 +531,7 @@ header {
 
 
 
-@media only screen and (max-width: 800px) {
+@media only screen and (min-width: 620px) and (max-width: 800px) {
 
 
     .title-season {
@@ -624,33 +653,32 @@ header {
     
     
     .startersimage img {
-        width: 100%;
+        width: 75%;
         height: auto;
-        margin-top: 5vh;
-        margin-bottom: 5vh;
-        padding-left: 5vw;
-        padding-right: 5vw;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        margin-left: 7.5vw;
+        margin-right: 7.5vw;
         display: inline-block;
     } 
     
     .maincoursesimage img {
-        
-        width: 100%;
+        width: 75%;
         height: auto;
-        margin-top: 5vh;
-        margin-bottom: 5vh;
-        padding-left: 5vw;
-        padding-right: 5vw;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        margin-left: 7.5vw;
+        margin-right: 7.5vw;
         display: inline-block;
     }
     
     .dessertsimage img {
-        width: 100%;
+        width: 75%;
         height: auto;
-        margin-top: 5vh;
-        margin-bottom: 5vh;
-        padding-left: 5vw;
-        padding-right: 5vw;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        margin-left: 7.5vw;
+        margin-right: 7.5vw;
         display: inline-block;
     }
     
