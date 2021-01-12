@@ -142,7 +142,7 @@ main {
     background-attachment: fixed;
     background-position: bottom bottom;
     position: relative;
-    z-index: -2;
+    z-index: -1;
     display: grid;
     grid-template-rows: 50px 200px;
     padding: 110px;
@@ -157,8 +157,9 @@ main {
     background-size: cover;
     z-index: -1;
     margin-top: 0px;
+   
 }
-main h1 {
+ main h1 {
     font-size: 35px;
     color:white;
     justify-self: center;
@@ -170,6 +171,9 @@ main h1 {
     min-width: 300px;
     z-index: 5;
     margin-top: 150px;
+
+
+
 }
 main p {
     width: 60%;
@@ -181,7 +185,11 @@ main p {
     line-height: 1.45;
     margin-left: auto;
     margin-right: auto;
-} 
+}  
+
+
+
+
 .buttons {
     margin-right: auto;
     margin-left: auto;
