@@ -1,0 +1,805 @@
+html {
+    background-image: url('../images/BG-thin_line.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    line-height: 1.5rem;
+}
+
+/* ------------------------------- Header--------------- */
+
+
+
+* {
+    box-sizing: border-box;
+}
+body {
+   margin:0;
+   padding:0; 
+}
+
+.navbar {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+#logo {
+    width: 150px;
+    margin-left: 30px;
+}
+
+.navbar-links ul {
+    margin:0;
+    padding:0;
+    display:flex;
+    margin-right:20px;
+}
+.navbar-links li {
+    list-style:none;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: white;
+    padding:1rem;
+    display:block;
+
+}
+
+.navbar-links ul li a:hover {
+    border: 1px solid #96192B;
+
+}
+
+.toggle-button {
+    position: absolute;
+    top: 1.55rem;
+    right:1rem;
+    display:none;
+    flex-direction: column;
+    justify-content: space-between;
+    width:30px;
+    height:21px;
+}
+
+.toggle-button .bar {
+    height:3px;
+    width:100%;
+    background-color: white;
+    border-radius:10px;
+}
+
+
+@media (max-width: 620px) {
+   
+.toggle-button {
+    display: flex;
+}
+
+#logo{
+    width: 200px;
+    height: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-right: 25px;
+}
+
+.navbar-links ul li a:hover {
+    background-color: #96192B;
+    color: #191C27;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.navbar-links {
+    display:none;
+    width:100%;
+   
+}
+.navbar {
+    flex-direction: column;
+    align-items:flex-start;
+    height: auto;
+    
+}
+
+header {
+    margin: 0;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    z-index: 7;
+    overflow: hidden;
+}
+
+.navbar-links ul {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    
+}
+.navbar-links li {
+    text-align: center;
+  
+}
+.navbar-links li a {
+    padding: .5rem 1rem;
+    
+}
+.navbar-links.active {
+    display: flex;
+ 
+}
+
+}
+
+.title-season {
+    text-align: center;
+    font-size: 1rem;
+    margin: 5vh;
+
+}
+
+.title-season h1 {
+    color: white;
+    margin-top: 5vw;
+}
+
+.nav-season {
+    color: white;
+    text-align: center;
+    font-size: 1rem; 
+    display: flex;
+    margin: 0;
+    margin-left: 14vw;
+    margin-right: 14vw;
+
+}
+
+#seasonnavhighlight {
+    border: 1px solid #96192B;
+}
+
+    
+.nav-season a {
+    text-decoration: none;
+    color: white;
+}
+.nav-season a:hover {
+    color: #96192B;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+
+/* ------------------------------- Main page--------------- */
+
+.title-season-p {
+    color: white;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 3%;
+}
+
+.season-img1 {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    display: inline-block;
+}
+
+#topimage {
+    width: 60vw;
+    height: auto;
+}
+
+
+/* ------------------------------- Main page - Season menu bar --------------- */
+
+
+.seasonmenu {
+    text-align: center;
+}
+
+
+.nav-season {
+    color: white;
+    text-align: center;
+    font-size: 1rem; 
+    display: flex;
+    margin: auto;
+}
+
+.nav-season li {
+    display: inline-block;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+  
+.nav-season li a {
+    text-align: center;
+    padding: 1rem;
+    float: right;
+  }
+  
+.seasonmenu ul {
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+}  
+
+.seasonmenu li a:hover {
+    color: red;
+  }
+  
+.seasonmenu li a {
+  text-decoration: none;
+  color: white;
+  }
+
+
+.seasonmenuintro {
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+
+.seasonmenubox {
+    text-align: left;
+    display: grid;
+    height: auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-right: 15%;
+    margin-left: 15%;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-bottom: 5vh;
+    background-color:#333333cb; 
+    grid-gap: 5vw;
+    grid-template-columns: (2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+    'seasonmenuintro seasonmenuintro'
+    'starters startersimage'
+    'maincourses maincoursesimage'
+    'desserts dessertsimage';
+
+  }
+
+  .seasonmenuintro { grid-area: seasonmenuintro; }
+  .seasonmenuintrotext { grid-area: seasonmenuintrotext; }
+  .starters { grid-area: starters; }
+  .startersimage { grid-area: startersimage; }
+  .maincourses { grid-area: maincourses; }
+  .maincoursesimage { grid-area: maincoursesimage; }
+  .desserts { grid-area: desserts; }
+  .dessertsimage { grid-area: dessertsimage; }
+
+
+.seasonmenubox h2 {
+    color: white;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    font-size: 150%;
+
+}
+
+.seasonmenubox p {
+    color: white;
+    margin-left: 1vw;
+    margin-right: 1vw;
+
+}
+
+
+.startersimage img {
+    width: 25vw;
+    height: auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    display: inline-block;
+} 
+
+.maincoursesimage img {
+    width: 25vw;
+    height: auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    display: inline-block;
+}
+
+.dessertsimage img {
+    width: 25vw;
+    height: auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    display: inline-block;
+}
+
+.season-text {
+    text-align: center;
+}
+
+.season-text {
+    font-size: 1rem;
+}
+
+
+/* ------------------------------- Season menu - Responsive--------------- */
+
+@media only screen and (min-width: 620px) {
+
+
+    .title-season {
+        margin-left: 5vw;
+        margin-right: 5vw;
+        margin-bottom: 5vh;
+    }
+
+    .title-season-p {
+        margin-bottom: 5vh;
+        font-size: 1rem;
+    }
+
+    .season-img1 {
+        display: none;
+    }
+
+    .season-text p {
+        font-size: 0.8rem;
+    }
+
+
+    .seasonmenu {
+        text-align: center;
+    }
+    
+    
+    .nav-season {
+        color: white;
+        text-align: center;
+        font-size: 1rem; 
+        display: flex;
+        margin: auto;
+    }
+    
+    .nav-season li {
+        display: inline-block;
+    }
+      
+    .nav-season li a {
+        text-align: center;
+        padding: 1rem;
+        float: left;
+      }
+      
+    .seasonmenu ul {
+        padding-left: 20vw;
+        padding-right: 20vw;
+        margin: 0;
+        width: 100%;
+        display: inline-block;
+    }  
+    
+    .seasonmenu li a:hover {
+        color: red;
+      }
+      
+    .seasonmenu li a {
+      text-decoration: none;
+      color: white;
+      }
+    
+    
+    .seasonmenuintro {
+        text-align: center;
+        margin-bottom: 5vh;
+    }
+    
+    
+    .seasonmenubox {
+        text-align: left;
+        display: grid;
+        height: auto;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        margin-right: 15%;
+        margin-left: 15%;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        padding-bottom: 5vh;
+        background-color:#333333cb; 
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        'seasonmenuintro seasonmenuintro'
+        'starters starters'
+        'startersimage startersimage'
+        'maincourses maincourses'
+        'maincoursesimage maincoursesimage'
+        'desserts desserts'
+        'dessertsimage dessertsimage';
+    
+      }
+    
+      .seasonmenuintro { grid-area: seasonmenuintro; }
+      .seasonmenuintrotext { grid-area: seasonmenuintrotext; }
+      .starters { grid-area: starters; }
+      .startersimage { grid-area: startersimage; }
+      .maincourses { grid-area: maincourses; }
+      .maincoursesimage { grid-area: maincoursesimage; }
+      .desserts { grid-area: desserts; }
+      .dessertsimage { grid-area: dessertsimage; }
+    
+    
+    .seasonmenubox h2 {
+        color: white;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        font-size: 150%;
+    
+    }
+    
+    .seasonmenubox p {
+        color: white;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    
+    }
+    
+    
+    .startersimage img {
+        width: 100%;
+        height: auto;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        display: inline-block;
+    } 
+    
+    .maincoursesimage img {
+        
+        width: 100%;
+        height: auto;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        display: inline-block;
+    }
+    
+    .dessertsimage img {
+        width: 100%;
+        height: auto;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        display: inline-block;
+    }
+    
+    .season-text {
+        text-align: center;
+    }
+    
+    .season-text {
+        font-size: 1rem;
+    }
+    
+}
+
+
+
+@media only screen and (max-width: 800px) {
+
+
+    .title-season {
+        margin-left: 5vw;
+        margin-right: 5vw;
+        margin-bottom: 5vh;
+    }
+
+    .title-season-p {
+        margin-bottom: 5vh;
+        font-size: 0.9rem;
+    }
+
+    .season-img1 {
+        display: none;
+    }
+
+    .season-text p {
+        font-size: 0.7rem;
+    }
+
+
+    .seasonmenu {
+        text-align: center;
+    }
+    
+    
+    .nav-season {
+        color: white;
+        text-align: center;
+        font-size: 1rem; 
+        display: flex;
+        margin: auto;
+    }
+    
+    .nav-season li {
+        display: inline-block;
+    }
+      
+    .nav-season li a {
+        text-align: center;
+        padding: 1rem;
+        float: left;
+      }
+      
+    .seasonmenu ul {
+        padding-left: 20vw;
+        padding-right: 20vw;
+        margin: 0;
+        width: 100%;
+        display: inline-block;
+    }  
+    
+    .seasonmenu li a:hover {
+        color: red;
+      }
+      
+    .seasonmenu li a {
+      text-decoration: none;
+      color: white;
+      }
+    
+    
+    .seasonmenuintro {
+        text-align: center;
+        margin-bottom: 5vh;
+    }
+    
+    
+    .seasonmenubox {
+        text-align: left;
+        display: grid;
+        height: auto;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        margin-right: 15%;
+        margin-left: 15%;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        padding-bottom: 5vh;
+        background-color:#333333cb; 
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        'seasonmenuintro seasonmenuintro'
+        'starters starters'
+        'startersimage startersimage'
+        'maincourses maincourses'
+        'maincoursesimage maincoursesimage'
+        'desserts desserts'
+        'dessertsimage dessertsimage';
+    
+      }
+    
+      .seasonmenuintro { grid-area: seasonmenuintro; }
+      .seasonmenuintrotext { grid-area: seasonmenuintrotext; }
+      .starters { grid-area: starters; }
+      .startersimage { grid-area: startersimage; }
+      .maincourses { grid-area: maincourses; }
+      .maincoursesimage { grid-area: maincoursesimage; }
+      .desserts { grid-area: desserts; }
+      .dessertsimage { grid-area: dessertsimage; }
+    
+    
+    .seasonmenubox h2 {
+        color: white;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        font-size: 150%;
+    
+    }
+    
+    .seasonmenubox p {
+        color: white;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    
+    }
+    
+    
+    .startersimage img {
+        width: 100%;
+        height: auto;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        display: inline-block;
+    } 
+    
+    .maincoursesimage img {
+        
+        width: 100%;
+        height: auto;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        display: inline-block;
+    }
+    
+    .dessertsimage img {
+        width: 100%;
+        height: auto;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        display: inline-block;
+    }
+    
+    .season-text {
+        text-align: center;
+    }
+    
+    .season-text {
+        font-size: 1rem;
+    }
+    
+}
+
+
+
+/* ------------------------------- footer--------------- */
+
+@media only screen and (min-width: 768px){
+
+.grid-footer{
+    display: grid;
+    margin-top: 3%;
+    background-color: #13141A;  
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr;
+  }
+
+  .grid-footer .footer-logo{
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    margin-left: 5vw;
+}
+
+.footer-logo img{
+   width: 60%;
+   float: right;
+   padding-right: 5vw;;
+}
+
+.grid-footer .footer-text{
+    text-align: right;
+    margin-right: 50%;
+    color: white;
+    font-size: 0.9em;
+}
+
+}
+
+/* for big screens */
+
+@media only screen and (min-width: 1700px){
+
+    .grid-footer{
+        display: grid;
+        margin-top: 3%;
+        background-color: #13141A;  
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr;
+      }
+    
+      .grid-footer .footer-logo{
+        margin-top: 2.5vw;
+        margin-bottom: 2.5vw;
+        margin-left: 5vw;
+    }
+    
+    .footer-logo img{
+       width: 60%;
+       float: right;
+       padding-right: 5vw;;
+    }
+    
+    .grid-footer .footer-text{
+        text-align: right;
+        margin-right: 50%;
+        color: white;
+        font-size: 1.3em;
+    }
+    
+
+}
+
+
+/* for tablet */
+@media only screen and (max-width: 768px){
+
+    .grid-footer{
+        display: grid;
+        background-color: #13141A;  
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 0.2fr;
+      }
+    
+      .grid-footer .footer-text{
+        text-align: center;
+        margin-right: 25%;
+        margin-left: 25%;
+        color: white;
+        font-size: 0.5em;
+    }
+    
+
+    .footer-logo {
+        height: auto;
+        margin-top: 5vw;
+        margin-left: 35vw;
+        margin-right: 35vw;
+     }
+
+    .footer-logo img{
+       width: 100%;
+       height: auto;
+    }
+}
+
+
+/* for phone */
+@media only screen and (max-width: 500px){
+
+    .grid-footer{
+        display: grid;
+        background-color: #13141A;  
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 0.2fr;
+      }
+    
+      .grid-footer .footer-text{
+        text-align: center;
+        margin-right: 25%;
+        margin-left: 25%;
+        color: white;
+        font-size: 0.9em;
+    }
+    
+
+    .footer-logo {
+        height: auto;
+        margin-top: 5vw;
+        margin-left: 25vw;
+        margin-right: 25vw;
+        display: inline-block;
+     }
+
+    .footer-logo img{
+       width: 100%;
+       height: auto;
+    }
+    
+    
+}
+
+

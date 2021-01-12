@@ -22,14 +22,13 @@ body {
     width: 100%;
     position: fixed; 
     display:flex;
-    margin-top: -5.3%;
-    padding-bottom: 0.2%;
-    padding-top:0.1%;
+    margin-top: -0.01%;
     justify-content: space-between;
     align-items: center;
     background-color: #13141A;
     color: white;
     font-size: 0.9rem;
+    margin-top: -80px;
 }
 
 .brand-title {
@@ -151,7 +150,6 @@ main {
     border: 3px solid white;
 }
 main h1 {
-    margin-top:1%;
     font-size: 35px;
     color:white;
     justify-self: center;
