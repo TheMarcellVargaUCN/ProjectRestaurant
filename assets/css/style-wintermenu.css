@@ -8,205 +8,134 @@ html {
     line-height: 1.5rem;
 }
 
-/* ------------------------------- Header--------------- */
+/* ------------------------------- header--------------- */
 
-
-
-* {
-    box-sizing: border-box;
-}
-body {
-   margin:0;
-   padding:0; 
-}
-
-.navbar {
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #000000;
-    color: white;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-}
-
-#logo {
-    width: 150px;
-    margin-left: 30px;
-}
-
-.navbar-links ul {
-    margin:0;
-    padding:0;
-    display:flex;
-    margin-right:20px;
-}
-.navbar-links li {
-    list-style:none;
-}
-
-.navbar-links li a {
-    text-decoration: none;
-    color: white;
-    padding:1rem;
-    display:block;
-
-}
-
-.navbar-links ul li a:hover {
-    border: 1px solid #96192B;
-
-}
-
-.toggle-button {
-    position: absolute;
-    top: 1.55rem;
-    right:1rem;
-    display:none;
-    flex-direction: column;
-    justify-content: space-between;
-    width:30px;
-    height:21px;
-}
-
-.toggle-button .bar {
-    height:3px;
-    width:100%;
-    background-color: white;
-    border-radius:10px;
-}
-
-
-@media (max-width: 620px) {
-   
-.toggle-button {
-    display: flex;
-}
-
-#logo{
-    width: 200px;
-    height: auto;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    margin-right: 25px;
-}
-
-.navbar-links ul li a:hover {
-    background-color: #96192B;
-    color: #191C27;
-    font-weight: bold;
-    font-family: 'Open Sans', sans-serif;
-
-}
-
-.navbar-links {
-    display:none;
-    width:100%;
-   
-}
-.navbar {
-    flex-direction: column;
-    align-items:flex-start;
-    height: auto;
-    
-}
-
-header {
-    margin: 0;
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
-    bottom: 0;
-    z-index: 7;
-    overflow: hidden;
-}
-
-.navbar-links ul {
-    flex-direction: column;
+.nav {
+    height: 50px;
     width: 100%;
-    height: auto;
-    
-}
-.navbar-links li {
-    text-align: center;
+    background-color:#13141A;
+    position: fixed;
+    margin-top: -5%;
+  }
   
-}
-.navbar-links li a {
-    padding: .5rem 1rem;
-    
-}
-.navbar-links.active {
-    display: flex;
- 
-}
-
-}
-
-.title-season {
-    text-align: center;
+  .nav .nav-header {
+    display: inline;
+  }
+  
+  .nav .nav-header .nav-logo {
+    display: inline-block;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
+    margin-left: 2%;
+  }
+  
+  .nav .nav-btn {
+    display: none;
+  }
+  
+  .nav .nav-links {
+    display: inline;
+    float: right;
+    margin-right: 3%;
     font-size: 1rem;
-    margin: 5vh;
-
-}
-
-.title-season h1 {
-    color: white;
-    margin-top: 5vw;
-    font-size: 300%;
-}
-
-.nav-season {
-    color: white;
-    text-align: center;
-    font-size: 1rem; 
-    display: flex;
-    margin: 0;
-    margin-left: 14vw;
-    margin-right: 14vw;
-
-}
-
-#seasonnavhighlight {
-    border: 1px solid #96192B;
-}
-
-    
-.nav-season a {
+  }
+  
+  .nav .nav-links a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
     text-decoration: none;
-    color: white;
-}
-.nav-season a:hover {
-    color: #96192B;
-    font-weight: bold;
-    font-family: 'Open Sans', sans-serif;
+    color: #efefef;
+  }
+  
+  .nav .nav-links a:hover {
+   color:#96192B;
+  }
+  
+  .nav #nav-check {
+    display: none;
+  }
+  
+  /* for phone */
+  @media only screen and (max-width: 600px) {
 
-}
-
+    .nav .nav-btn {
+      display:block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav .nav-btn label {
+      display:block;
+      width: 50px;
+      height: 50px;
+      padding: 15px;
+    }
+    
+    .nav .nav-btn label span {
+      display: block;
+      width: 23px;
+      height: 7px;
+      border-top: 2px solid #eee;
+    }
+  
+    
+    .nav .nav-links {
+      display: flex;
+      flex-flow: row wrap;
+      text-align: center;
+      justify-content:center;
+      width: 100%;
+      background-color: #333;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      margin-top: -1%;
+    }
+    .nav .nav-links a {
+      text-align: center;
+      border: 2px solid #eee;
+      margin-left: 7%;
+      margin-right:1%;
+      margin-bottom: 3px;
+      margin-top: 3px;
+      width: 20%;
+      font-size: 0.8rem;
+    }
+   
+    .nav #nav-check:checked ~ .nav-links {
+      height: calc(35vh - 50px);
+    }
+  }
 
 /* ------------------------------- Main page--------------- */
 
-.title-season-p {
-    color: white;
-    text-align: center;
-    font-size: 0.9rem;
-    margin-top: 3%;
-}
-
-.season-img1 {
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-    display: inline-block;
-}
 
 #topimage {
     width: 60vw;
     height: auto;
 }
 
+.seasonmenu {
+    margin-top: 5%;
+}
+
 
 /* ------------------------------- Main page - Season menu bar --------------- */
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1000px) {
+
+.title-season-p {
+        color: white;
+        text-align: center;
+        font-size: 1rem;
+        margin-top: 2.5vh;
+}
+    
+.season-img1 {
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        display: inline-block;
+}    
 
 .seasonmenu {
     text-align: center;
@@ -305,6 +234,8 @@ header {
     margin-bottom: 5vh;
     margin-left: 2.5vw;
     margin-right: 2.5vw;
+    padding-top: 5vh;
+    font-size: 125%;
 }
 
 .maincourses {
@@ -312,6 +243,7 @@ header {
     margin-bottom: 5vh;
     margin-left: 2.5vw;
     margin-right: 2.5vw;
+    font-size: 125%;
 }
 
 .desserts {
@@ -319,6 +251,7 @@ header {
     margin-bottom: 5vh;
     margin-left: 2.5vw;
     margin-right: 2.5vw;
+    font-size: 125%;
 }
 
 .startersimage img {
@@ -353,11 +286,9 @@ header {
 
 .season-text {
     text-align: center;
+    font-size: 1.2rem;
 }
 
-.season-text {
-    font-size: 1rem;
-}
 
 }
 
@@ -365,7 +296,17 @@ header {
 
 @media only screen and (max-width: 620px) {
 
+    .seasonmenu {
+        margin-top: 15%;
+    }
+    .nav {
+        margin-top: -15%;
+      }
 
+      .nav #nav-check:checked ~ .nav-links {
+        height: calc(37vh - 50px);
+      }
+    
     .title-season {
         margin-left: 5vw;
         margin-right: 5vw;
@@ -522,17 +463,13 @@ header {
     .season-text {
         text-align: center;
     }
-    
-    .season-text {
-        font-size: 1rem;
-    }
+
     
 }
 
 
 
-@media only screen and (min-width: 620px) and (max-width: 800px) {
-
+@media only screen and (min-width: 620px) and (max-width: 1000px) {
 
     .title-season {
         margin-left: 5vw;
@@ -541,16 +478,11 @@ header {
     }
 
     .title-season-p {
-        margin-bottom: 5vh;
         font-size: 0.9rem;
     }
 
-    .season-img1 {
-        display: none;
-    }
-
     .season-text p {
-        font-size: 0.7rem;
+        font-size: 0.9rem;
     }
 
 
@@ -597,7 +529,6 @@ header {
     
     .seasonmenuintro {
         text-align: center;
-        margin-bottom: 5vh;
     }
     
     
@@ -686,9 +617,6 @@ header {
         text-align: center;
     }
     
-    .season-text {
-        font-size: 1rem;
-    }
     
 }
 
