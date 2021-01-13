@@ -140,7 +140,8 @@ body {
 /* ------------------------------- main-page--------------- */
 
 main {
-    background-image: url('../images/mainnongradient.jpg');
+    /* background-image: url('../images/mainnongradient.jpg'); */
+    background: linear-gradient(to bottom, rgba(25, 28, 39, 0.5),rgba(25, 28, 39, 1)), url(/assets/images/mainnongradient.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: bottom bottom;
@@ -154,12 +155,12 @@ main {
     height: 80vh;
     margin-top: 0px;
 }
-#gradientbg {
+/* #gradientbg {
     background-image:
     linear-gradient(to bottom, rgba(25, 28, 39, 0.4), rgba(25, 28, 39, 1));
     background-size: cover;
     z-index: -1;
-    margin-top: 0px;
+    margin-top: 0px; */
    
 }
  main h1 {
