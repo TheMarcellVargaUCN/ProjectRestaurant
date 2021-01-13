@@ -14,7 +14,7 @@ html {
 .nav {
     height: 50px;
     width: 100%;
-    background-color:transparent;
+    background-color:rgba(25, 28, 39, 1);;
     position: fixed;
     margin-top: 0%;
   }
@@ -50,6 +50,7 @@ html {
   
   .nav .nav-links a:hover {
    color:#96192B;
+   border-color: #96192B;
   }
   
   .nav #nav-check {
@@ -129,7 +130,7 @@ main {
     position: relative;
     z-index: 0;
     margin-left: 15%;
-    width: 60%;
+    width: 100%;
     min-width: 300px;
     z-index: 5;
     margin-top: 150px;
@@ -155,9 +156,9 @@ main p {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 1000px;
-    column-gap: 30px;
+    column-gap: 40px;
     zoom: 80%;
-    margin-top: 0px;
+    margin-top: 50px;
 }
 .box1{
     background-image: url('../images/box11.jpg');
@@ -249,16 +250,12 @@ main p {
 }
 
 .bottom {
-    background-image: url('../images/bottom1.jpg');
+    background: linear-gradient(to top, rgba(25, 28, 39, 0.5),rgba(25, 28, 39, 1)), url(../images/bottom1.jpg);
     width: 100%;
-    height: 562px;
+    height: 70vh;
     margin-top: 5%;
-    margin-bottom: 5%;
     background-size: cover;
-    margin-right: auto;
-    margin-left: auto;
     position: relative;
-    zoom: 80%;
     z-index: -5;
 }
 .bottom h2 {
@@ -267,11 +264,11 @@ main p {
     position: absolute;
     text-align: left;
     color: white;
-    margin-top: 460px;
+    bottom: 0;
     margin-left: 20px;
 } 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 850px) {
     .buttons {
     display: grid;
     grid-template-columns: 480px;
@@ -282,11 +279,14 @@ main p {
     margin-left: auto;
     margin-right: auto;
     }
+    .bottom h2 {
+        font-size: 28px;
+    }
 }
 @media screen and (max-width: 650px) {
     main h1 {
         margin-left: 0px;
-        margin-top: 0;
+        margin-top: 0px;
     }
     main p {
         margin-left: 0px;
