@@ -8,104 +8,180 @@ html {
     line-height: 1.5rem;
 }
 
-/* ------------------------------- header--------------- */
+/* ------------------------------- Header--------------- */
 
-.nav {
-    height: 50px;
-    width: 100%;
-    background-color:#13141A;
-    position: fixed;
-    margin-top: -5%;
-  }
-  
-  .nav .nav-header {
-    display: inline;
-  }
-  
-  .nav .nav-header .nav-logo {
-    display: inline-block;
-    color: #fff;
-    padding: 10px 10px 10px 10px;
-    margin-left: 2%;
-  }
-  
-  .nav .nav-btn {
-    display: none;
-  }
-  
-  .nav .nav-links {
-    display: inline;
-    float: right;
-    margin-right: 3%;
-    font-size: 1rem;
-  }
-  
-  .nav .nav-links a {
-    display: inline-block;
-    padding: 13px 10px 13px 10px;
+
+
+* {
+    box-sizing: border-box;
+}
+body {
+   margin:0;
+   padding:0; 
+}
+
+.navbar {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+#logo {
+    width: 150px;
+    margin-left: 30px;
+}
+
+.navbar-links ul {
+    margin:0;
+    padding:0;
+    display:flex;
+    margin-right:20px;
+}
+.navbar-links li {
+    list-style:none;
+}
+
+.navbar-links li a {
     text-decoration: none;
-    color: #efefef;
-  }
-  
-  .nav .nav-links a:hover {
-   color:#96192B;
-  }
-  
-  .nav #nav-check {
-    display: none;
-  }
-  
-  /* for phone */
-  @media only screen and (max-width: 600px) {
+    color: white;
+    padding:1rem;
+    display:block;
 
-    .nav .nav-btn {
-      display:block;
-      position: absolute;
-      right: 0px;
-      top: 0px;
-    }
-    .nav .nav-btn label {
-      display:block;
-      width: 50px;
-      height: 50px;
-      padding: 15px;
-    }
-    
-    .nav .nav-btn label span {
-      display: block;
-      width: 23px;
-      height: 7px;
-      border-top: 2px solid #eee;
-    }
-  
-    
-    .nav .nav-links {
-      display: flex;
-      flex-flow: row wrap;
-      text-align: center;
-      justify-content:center;
-      width: 100%;
-      background-color: #333;
-      height: 0px;
-      transition: all 0.3s ease-in;
-      overflow-y: hidden;
-      margin-top: -1%;
-    }
-    .nav .nav-links a {
-      text-align: center;
-      border: 2px solid #eee;
-      margin-left: 7%;
-      margin-right:1%;
-      margin-bottom: 3px;
-      margin-top: 3px;
-      width: 20%;
-      font-size: 0.8rem;
-    }
+}
+
+.navbar-links ul li a:hover {
+    border: 1px solid #96192B;
+
+}
+
+.toggle-button {
+    position: absolute;
+    top: 1.55rem;
+    right:1rem;
+    display:none;
+    flex-direction: column;
+    justify-content: space-between;
+    width:30px;
+    height:21px;
+}
+
+.toggle-button .bar {
+    height:3px;
+    width:100%;
+    background-color: white;
+    border-radius:10px;
+}
+
+
+@media (max-width: 620px) {
    
-    .nav #nav-check:checked ~ .nav-links {
-      height: calc(35vh - 50px);
-    }
-  }
+.toggle-button {
+    display: flex;
+}
+
+#logo{
+    width: 200px;
+    height: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-right: 25px;
+}
+
+.navbar-links ul li a:hover {
+    background-color: #96192B;
+    color: #191C27;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.navbar-links {
+    display:none;
+    width:100%;
+   
+}
+.navbar {
+    flex-direction: column;
+    align-items:flex-start;
+    height: auto;
+    
+}
+
+header {
+    margin: 0;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    z-index: 7;
+    overflow: hidden;
+}
+
+.navbar-links ul {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    
+}
+.navbar-links li {
+    text-align: center;
+  
+}
+.navbar-links li a {
+    padding: .5rem 1rem;
+    
+}
+.navbar-links.active {
+    display: flex;
+ 
+}
+
+}
+
+.title-season {
+    text-align: center;
+    font-size: 1rem;
+    margin: 5vh;
+
+}
+
+.title-season h1 {
+    color: white;
+    margin-top: 5vw;
+    font-size: 300%;
+}
+
+.nav-season {
+    color: white;
+    text-align: center;
+    font-size: 1rem; 
+    display: flex;
+    margin: 0;
+    margin-left: 14vw;
+    margin-right: 14vw;
+
+}
+
+#seasonnavhighlight {
+    border: 1px solid #96192B;
+}
+
+    
+.nav-season a {
+    text-decoration: none;
+    color: white;
+}
+.nav-season a:hover {
+    color: #96192B;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
 
 /* ------------------------------- Main page--------------- */
 
@@ -113,10 +189,6 @@ html {
 #topimage {
     width: 60vw;
     height: auto;
-}
-
-.seasonmenu {
-    margin-top: 5%;
 }
 
 
@@ -196,7 +268,7 @@ html {
     padding-right: 5vw;
     padding-bottom: 5vh;
     background-color:#333333cb; 
-    grid-gap: 5vw;
+    grid-gap: 2.5vw;
     grid-template-columns: (2, 1fr);
     grid-template-rows: auto;
     grid-template-areas:
@@ -219,7 +291,7 @@ html {
 
 .seasonmenubox h2 {
     color: white;
-    font-size: 200%;
+    font-size: 175%;
     margin-bottom: 2.5vh;
 
 }
@@ -234,7 +306,7 @@ html {
     margin-bottom: 5vh;
     margin-left: 2.5vw;
     margin-right: 2.5vw;
-    padding-top: 5vh;
+    padding-top: 2.5vh;
     font-size: 125%;
 }
 
@@ -243,6 +315,7 @@ html {
     margin-bottom: 5vh;
     margin-left: 2.5vw;
     margin-right: 2.5vw;
+    padding-top: 2.5vh;
     font-size: 125%;
 }
 
@@ -251,16 +324,19 @@ html {
     margin-bottom: 5vh;
     margin-left: 2.5vw;
     margin-right: 2.5vw;
+    padding-top: 2.5vh;
     font-size: 125%;
 }
 
 .startersimage img {
     width: 25vw;
     height: auto;
-    margin-top: 10vh;
+    margin-top: 5vh;
     margin-bottom: 5vh;
     margin-left: 2.5vw;
     margin-right: 2.5vw;
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
     display: inline-block;
 } 
 
@@ -271,16 +347,20 @@ html {
     margin-bottom: 5vh;
     margin-left: 2.5vw;
     margin-right: 2.5vw;
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
     display: inline-block;
 }
 
 .dessertsimage img {
     width: 25vw;
     height: auto;
-    margin-top: 10vh;
+    margin-top: 5vh;
     margin-bottom: 5vh;
     margin-left: 2.5vw;
     margin-right: 2.5vw;
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
     display: inline-block;
 }
 
@@ -296,17 +376,7 @@ html {
 
 @media only screen and (max-width: 620px) {
 
-    .seasonmenu {
-        margin-top: 15%;
-    }
-    .nav {
-        margin-top: -15%;
-      }
 
-      .nav #nav-check:checked ~ .nav-links {
-        height: calc(37vh - 50px);
-      }
-    
     .title-season {
         margin-left: 5vw;
         margin-right: 5vw;
@@ -318,8 +388,9 @@ html {
     }
 
     .title-season-p {
+        margin-top: 5vh;
         margin-bottom: 5vh;
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     .season-img1 {
@@ -327,7 +398,7 @@ html {
     }
 
     .season-text p {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
 
@@ -360,21 +431,21 @@ html {
         margin: 0;
         width: 100%;
         display: inline-block;
+        
     }  
     
     .seasonmenu li a:hover {
         color: red;
-      }
+    }
       
     .seasonmenu li a {
-      text-decoration: none;
-      color: white;
-      }
+        text-decoration: none;
+        color: white;
+    }
     
     
     .seasonmenuintro {
         text-align: center;
-        margin-bottom: 5vh;
     }
     
     
@@ -412,12 +483,38 @@ html {
       .desserts { grid-area: desserts; }
       .dessertsimage { grid-area: dessertsimage; }
     
+      .starters {
+        margin-top: 2.5vh;
+        margin-bottom: 2.5vh;
+        margin-left: 2.5vw;
+        margin-right: 2.5vw;
+        padding-top: 2.5vh;
+        font-size: 125%;
+    }
+    
+    .maincourses {
+        margin-top: 2.5vh;
+        margin-bottom: 5vh;
+        margin-left: 2.5vw;
+        margin-right: 2.5vw;
+        font-size: 125%;
+    }
+    
+    .desserts {
+        margin-top: 2.5vh;
+        margin-bottom: 2.5vh;
+        margin-left: 2.5vw;
+        margin-right: 2.5vw;
+        padding-top: 2.5vh;
+        font-size: 125%;
+    }
+    
     
     .seasonmenubox h2 {
         color: white;
         margin-left: 5vw;
         margin-right: 5vw;
-        font-size: 150%;
+        font-size: 175%;
     
     }
     
@@ -471,6 +568,7 @@ html {
 
 @media only screen and (min-width: 620px) and (max-width: 1000px) {
 
+
     .title-season {
         margin-left: 5vw;
         margin-right: 5vw;
@@ -479,10 +577,14 @@ html {
 
     .title-season-p {
         font-size: 0.9rem;
+        margin-top: 2.5vh;
+        margin-bottom: 2.5vh;
     }
 
     .season-text p {
         font-size: 0.9rem;
+        margin-top: 2.5vh;
+        margin-bottom: 2.5vh;
     }
 
 
@@ -510,9 +612,8 @@ html {
       }
       
     .seasonmenu ul {
-        padding-left: 20vw;
-        padding-right: 20vw;
-        margin: 0;
+        padding-left: 22.5vw;
+        padding-right: 22.5vw;
         width: 100%;
         display: inline-block;
     }  
@@ -566,12 +667,39 @@ html {
       .desserts { grid-area: desserts; }
       .dessertsimage { grid-area: dessertsimage; }
     
+      .starters {
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        margin-left: 2.5vw;
+        margin-right: 2.5vw;
+        padding-top: 2.5vh;
+        font-size: 125%;
+    }
+    
+    .maincourses {
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        margin-left: 2.5vw;
+        margin-right: 2.5vw;
+        padding-top: 2.5vh;
+        font-size: 125%;
+    }
+    
+    .desserts {
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        margin-left: 2.5vw;
+        margin-right: 2.5vw;
+        padding-top: 2.5vh;
+        font-size: 125%;
+    }
+    
     
     .seasonmenubox h2 {
         color: white;
         margin-left: 5vw;
         margin-right: 5vw;
-        font-size: 150%;
+        font-size: 175%;
     
     }
     
@@ -757,5 +885,3 @@ html {
     
     
 }
-
-
