@@ -109,18 +109,6 @@ html {
 
 /* ------------------------------- Main page--------------- */
 
-.title-season-p {
-    color: white;
-    text-align: center;
-    font-size: 0.9rem;
-    margin-top: 3%;
-}
-
-.season-img1 {
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-    display: inline-block;
-}
 
 #topimage {
     width: 60vw;
@@ -134,7 +122,20 @@ html {
 
 /* ------------------------------- Main page - Season menu bar --------------- */
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1000px) {
+
+.title-season-p {
+        color: white;
+        text-align: center;
+        font-size: 1rem;
+        margin-top: 2.5vh;
+}
+    
+.season-img1 {
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        display: inline-block;
+}    
 
 .seasonmenu {
     text-align: center;
@@ -233,6 +234,8 @@ html {
     margin-bottom: 5vh;
     margin-left: 2.5vw;
     margin-right: 2.5vw;
+    padding-top: 5vh;
+    font-size: 125%;
 }
 
 .maincourses {
@@ -240,6 +243,7 @@ html {
     margin-bottom: 5vh;
     margin-left: 2.5vw;
     margin-right: 2.5vw;
+    font-size: 125%;
 }
 
 .desserts {
@@ -247,6 +251,7 @@ html {
     margin-bottom: 5vh;
     margin-left: 2.5vw;
     margin-right: 2.5vw;
+    font-size: 125%;
 }
 
 .startersimage img {
@@ -281,11 +286,9 @@ html {
 
 .season-text {
     text-align: center;
+    font-size: 1.2rem;
 }
 
-.season-text {
-    font-size: 1rem;
-}
 
 }
 
@@ -460,16 +463,13 @@ html {
     .season-text {
         text-align: center;
     }
-    
-    .season-text {
-        font-size: 1rem;
-    }
+
     
 }
 
 
 
-@media only screen and (min-width: 620px) and (max-width: 800px) {
+@media only screen and (min-width: 620px) and (max-width: 1000px) {
 
     .title-season {
         margin-left: 5vw;
@@ -478,16 +478,14 @@ html {
     }
 
     .title-season-p {
-        margin-bottom: 5vh;
         font-size: 0.9rem;
     }
 
     .season-img1 {
-        display: none;
     }
 
     .season-text p {
-        font-size: 0.7rem;
+        font-size: 0.9rem;
     }
 
 
@@ -534,7 +532,6 @@ html {
     
     .seasonmenuintro {
         text-align: center;
-        margin-bottom: 5vh;
     }
     
     
@@ -623,9 +620,6 @@ html {
         text-align: center;
     }
     
-    .season-text {
-        font-size: 1rem;
-    }
     
 }
 
