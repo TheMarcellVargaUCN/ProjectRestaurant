@@ -480,7 +480,7 @@ body {
         margin-left: 15%;
         padding-left: 5vw;
         padding-right: 5vw;
-        padding-bottom: 5vh;
+        padding-bottom: 2.5vh;
         background-color:#333333cb; 
         grid-template-columns: 1fr;
         grid-template-rows: auto;
@@ -504,7 +504,24 @@ body {
       .desserts { grid-area: desserts; }
       .dessertsimage { grid-area: dessertsimage; }
     
-      .starters {
+    
+    
+    .seasonmenubox h2 {
+        color: white;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        font-size: 175%;
+    
+    }
+    
+    .seasonmenubox p {
+        color: white;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    
+    }
+    
+    .starters {
         margin-top: 2.5vh;
         margin-bottom: 2.5vh;
         margin-left: 2.5vw;
@@ -529,23 +546,7 @@ body {
         padding-top: 2.5vh;
         font-size: 125%;
     }
-    
-    
-    .seasonmenubox h2 {
-        color: white;
-        margin-left: 5vw;
-        margin-right: 5vw;
-        font-size: 175%;
-    
-    }
-    
-    .seasonmenubox p {
-        color: white;
-        margin-left: 5vw;
-        margin-right: 5vw;
-    
-    }
-    
+
     
     .startersimage img {
         width: 100%;
@@ -589,10 +590,6 @@ body {
 
 @media only screen and (min-width: 620px) and (max-width: 1000px) {
 
-    .nav {
-        margin-top: -15%;
-      }    
-
     .title-season {
         margin-left: 5vw;
         margin-right: 5vw;
@@ -600,13 +597,13 @@ body {
     }
 
     .title-season-p {
-        font-size: 0.9rem;
+        font-size: 1rem;
         margin-top: 2.5vh;
         margin-bottom: 2.5vh;
     }
 
     .season-text p {
-        font-size: 0.9rem;
+        font-size: 1.2rem;
         margin-top: 2.5vh;
         margin-bottom: 2.5vh;
     }
