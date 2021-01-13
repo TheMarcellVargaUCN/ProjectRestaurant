@@ -185,18 +185,6 @@ header {
 
 /* ------------------------------- Main page--------------- */
 
-.title-season-p {
-    color: white;
-    text-align: center;
-    font-size: 0.9rem;
-    margin-top: 3%;
-}
-
-.season-img1 {
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-    display: inline-block;
-}
 
 #topimage {
     width: 60vw;
@@ -206,7 +194,20 @@ header {
 
 /* ------------------------------- Main page - Season menu bar --------------- */
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1000px) {
+
+.title-season-p {
+        color: white;
+        text-align: center;
+        font-size: 1rem;
+        margin-top: 2.5vh;
+}
+    
+.season-img1 {
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        display: inline-block;
+}    
 
 .seasonmenu {
     text-align: center;
@@ -305,6 +306,8 @@ header {
     margin-bottom: 5vh;
     margin-left: 2.5vw;
     margin-right: 2.5vw;
+    padding-top: 5vh;
+    font-size: 125%;
 }
 
 .maincourses {
@@ -312,6 +315,7 @@ header {
     margin-bottom: 5vh;
     margin-left: 2.5vw;
     margin-right: 2.5vw;
+    font-size: 125%;
 }
 
 .desserts {
@@ -319,6 +323,7 @@ header {
     margin-bottom: 5vh;
     margin-left: 2.5vw;
     margin-right: 2.5vw;
+    font-size: 125%;
 }
 
 .startersimage img {
@@ -353,11 +358,9 @@ header {
 
 .season-text {
     text-align: center;
+    font-size: 1.2rem;
 }
 
-.season-text {
-    font-size: 1rem;
-}
 
 }
 
@@ -522,16 +525,13 @@ header {
     .season-text {
         text-align: center;
     }
-    
-    .season-text {
-        font-size: 1rem;
-    }
+
     
 }
 
 
 
-@media only screen and (min-width: 620px) and (max-width: 800px) {
+@media only screen and (min-width: 620px) and (max-width: 1000px) {
 
 
     .title-season {
@@ -541,16 +541,14 @@ header {
     }
 
     .title-season-p {
-        margin-bottom: 5vh;
         font-size: 0.9rem;
     }
 
     .season-img1 {
-        display: none;
     }
 
     .season-text p {
-        font-size: 0.7rem;
+        font-size: 0.9rem;
     }
 
 
@@ -597,7 +595,6 @@ header {
     
     .seasonmenuintro {
         text-align: center;
-        margin-bottom: 5vh;
     }
     
     
@@ -686,9 +683,6 @@ header {
         text-align: center;
     }
     
-    .season-text {
-        font-size: 1rem;
-    }
     
 }
 
