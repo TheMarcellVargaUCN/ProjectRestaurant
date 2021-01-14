@@ -12,6 +12,7 @@ html {
   position: relative;
   margin-top: 10px;
   width: 150PX;
+  z-index: 0;
 }
 
 .reviews img {
@@ -54,6 +55,7 @@ body {
     background-color:#13141A;
     position: fixed;
     margin-top: -5%;
+    z-index: 1;
   }
   
   .nav .nav-header {
