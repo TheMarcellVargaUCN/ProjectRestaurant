@@ -8,24 +8,35 @@ html {
     font-family: 'Open Sans', sans-serif;
     line-height: 1.5;
 }
-.ratebtn {
-  border: none;
-  border-radius: 2px;
-  background-color: #22242e;
-  color: white;
-  width: 150px;
-  height: 65px;
-  font-family: 'Open Sans', sans-serif;
-  margin-top: 0;
-}
-.ratebtn:hover h3 {
-  display:none;
+.reviews {
+  position: relative;
+  margin-top: 10px;
+  width: 150PX;
 }
 
-.ratebtn:hover::before{
-  content:"4,7 STARS";
-  font-family: 'Open Sans', sans-serif;
-  font-size: 20px;
+.reviews img {
+  position: absolute;
+  width:100%;
+  left: 0;
+  box-shadow: 3px 3px 10px black;
+}
+
+.ratebtn {
+  position: absolute;
+  width: 100%;
+  left:0;
+  top: 0px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity .4s ease;
+}
+
+.ratebtn a {
+  z-index: 1;
+}
+
+.reviews:hover .ratebtn {
+  opacity: 1;
 }
 
 
@@ -188,6 +199,7 @@ hr {
 
 .title-contact {
     margin-left: 40%;
+    margin-top: -30px;
     font-size: 0.8rem;
     color: white;
     text-align: left;
@@ -205,7 +217,7 @@ hr {
 }
 .second-title {
     margin-left: 40%;
-    margin-top:-8%;
+    margin-top:-60px;
     margin-bottom: 10%;
     font-size: 0.8rem;
     color: white;
@@ -292,7 +304,7 @@ footer {
         margin-right: 10%;
         margin-left: 10%; 
         grid-template-columns: 1fr;
-        grid-template-rows: 100px 150px 150px 430px;
+        grid-template-rows: 100px 150px 150px 80px 430px;
       }
       hr {
         margin-left: auto;
@@ -302,7 +314,7 @@ footer {
       }
     .contact-img1 {
         text-align: center;
-        grid-row-start: 4;
+        grid-row-start: 5;
         width: 71%;
         height: 200px;
         margin-top: 20px;
@@ -319,6 +331,10 @@ footer {
         margin-bottom: 10%;
         grid-column-start: 1;
         grid-row-start: 3;
+    }
+    .reviews{
+      margin-left: auto;
+      margin-right: auto;
     }
      
 }/* ------------------------------- footer--------------- */
