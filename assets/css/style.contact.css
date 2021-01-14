@@ -47,103 +47,109 @@ body {
    margin:0;
    padding:0; 
 }
+/* ------------------------------- header--------------- */
 
 .nav {
-    height: 50px;
-    width: 100%;
-    background-color:#13141A;
-    position: fixed;
-    margin-top: -5%;
+  height: 50px;
+  width: 100%;
+  background-color: #13141A;  
+  position: fixed;
+  margin-top: -5%;
+}
+
+.nav .nav-header {
+  display: inline;
+}
+
+.nav .nav-header .nav-logo {
+  display: inline-block;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+  margin-left: 2%;
+}
+
+.nav .nav-btn {
+  display: none;
+}
+
+.nav .nav-links {
+  display: inline;
+  float: right;
+  margin-right: 3%;
+  font-size: 1rem;
+}
+
+.nav .nav-links a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+.nav .nav-links a:hover {
+ color:#96192B;
+ border-color: #96192B;
+}
+
+.nav #nav-check {
+  display: none;
+}
+
+/* for phone */
+@media only screen and (max-width: 600px) {
+
+  .nav  {
+    margin-top: -12%;
   }
-  
-  .nav .nav-header {
-    display: inline;
-  }
-  
-  .nav .nav-header .nav-logo {
-    display: inline-block;
-    color: #fff;
-    padding: 10px 10px 10px 10px;
-    margin-left: 2%;
-  }
-  
+
   .nav .nav-btn {
-    display: none;
+    display:block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
   }
+  .nav .nav-btn label {
+    display:block;
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+  }
+  
+  .nav .nav-btn label span {
+    display: block;
+    width: 23px;
+    height: 7px;
+    border-top: 2px solid #eee;
+  }
+
   
   .nav .nav-links {
-    display: inline;
-    float: right;
-    margin-right: 3%;
-    font-size: 1rem;
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    justify-content:center;
+    width: 100%;
+    background-color: #13141A;  
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    margin-top: -1%;
   }
-  
   .nav .nav-links a {
-    display: inline-block;
-    padding: 13px 10px 13px 10px;
-    text-decoration: none;
-    color: #efefef;
+    text-align: center;
+    border: 2px solid #eee;
+    margin-left: 7%;
+    margin-right:1%;
+    margin-bottom: 3px;
+    margin-top: 3px;
+    width: 27%;
+    font-size: 0.8rem;
   }
-  
-  .nav .nav-links a:hover {
-   color:#96192B;
+ 
+  .nav #nav-check:checked ~ .nav-links {
+    height: calc(42vh - 50px);
   }
-  
-  .nav #nav-check {
-    display: none;
-  }
-  
-  /* for phone */
-  @media only screen and (max-width: 600px) {
-
-    .nav .nav-btn {
-      display:block;
-      position: absolute;
-      right: 0px;
-      top: 0px;
-    }
-    .nav .nav-btn label {
-      display:block;
-      width: 50px;
-      height: 50px;
-      padding: 15px;
-    }
-    
-    .nav .nav-btn label span {
-      display: block;
-      width: 23px;
-      height: 7px;
-      border-top: 2px solid #eee;
-    }
-  
-    
-    .nav .nav-links {
-      display: flex;
-      flex-flow: row wrap;
-      text-align: center;
-      justify-content:center;
-      width: 100%;
-      background-color: #333;
-      height: 0px;
-      transition: all 0.3s ease-in;
-      overflow-y: hidden;
-      margin-top: -1%;
-    }
-    .nav .nav-links a {
-      text-align: center;
-      border: 2px solid #eee;
-      margin-left: 7%;
-      margin-right:1%;
-      margin-bottom: 3px;
-      margin-top: 3px;
-      width: 20%;
-      font-size: 0.8rem;
-    }
-   
-    .nav #nav-check:checked ~ .nav-links {
-      height: calc(35vh - 50px);
-    }
-  }
+}
 
 /* ------------------------------- contact --------------- */
 
@@ -275,29 +281,6 @@ footer {
     }
 }
 @media only screen and (max-width: 600px) {
-
-    .nav {
-        height: 50px;
-        width: 100%;
-        background-color:#13141A;
-        position: fixed;
-        margin-top: -12%;
-      }
-
-      .nav .nav-links a {
-        text-align: center;
-        border: 2px solid #eee;
-        margin-left: 8%;
-        margin-right:2%;
-        margin-bottom: 3px;
-        margin-top: 3px;
-        width: 25%;
-        font-size: 0.8rem;
-      }
-
-      .nav #nav-check:checked ~ .nav-links {
-        height: calc(37vh - 50px);
-      }
 
     .grid-contact {
         margin-top: 12%;
