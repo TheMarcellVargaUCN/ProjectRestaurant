@@ -388,16 +388,10 @@ main p {
 
 /* ------------------------------- footer--------------- */
 
-}
 footer {
-    /* display: flex; */
-    /* justify-content: space-between; */
-    /* align-items: center; */
-    /* background-color: #000000; */
     color: white;
     font-family: 'Open Sans', sans-serif;
-    /* font-size: 14px; */
-    margin-top: 50px;
+    margin-top: 0px;
 }
 
 
@@ -499,7 +493,7 @@ footer {
         grid-column-end: 4;
         grid-row-start: 1;
         grid-row-end: 1;
-        font-size: 0.6em;
+        font-size: 0.8em;
         text-align: right;
         margin-right: 40%;
         color: white;
