@@ -18,6 +18,37 @@ body {
    padding:0; 
 }
 /* ------------------------------- header--------------- */
+.reviews {
+    position: relative;
+    margin-top: 50px;
+    width: 150PX;
+    margin-left:-23%;
+  }
+  
+  .reviews img {
+    position: absolute;
+    width:100%;
+    left: 0;
+    box-shadow: 3px 3px 10px black;
+  }
+  
+  .ratebtn {
+    position: absolute;
+    width: 100%;
+    left:0;
+    top: 0px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity .4s ease;
+  }
+  
+  .ratebtn a {
+    z-index: 1;
+  }
+  
+  .reviews:hover .ratebtn {
+    opacity: 1;
+  }
 
 .nav {
     height: 50px;
@@ -146,16 +177,14 @@ body {
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 1;
-    grid-row-end: 1;    
+    grid-row-end: 1;   
  } 
  
  .wedding-nav p {
-    font-weight: bold;
     display: inline-block;
-    font-size:1rem;
+    font-size: 15px;
     text-decoration: none;
-    padding-left:0.9rem;
-    padding-right:0.9rem;
+    padding: 10px;
  }
 
  .wedding-nav p a {
@@ -165,13 +194,13 @@ body {
 
  .wedding-nav p a:hover {
    color:#96192B;
-   font-weight: bold;
    
 }
 
 .wedding-nav p .active{
-    color:#96192B;
-    font-weight: bold;
+    color:white;
+    border: 1px solid #96192B;
+    padding: 15px;
  }
 
 
@@ -503,7 +532,7 @@ body {
     margin-left: 15%;
     background-color:#333333cb; 
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows:0.3fr 0.2fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.1fr;
+    grid-template-rows:0.3fr 0.2fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.1fr;
     } 
 
     .nav .nav-links a {
@@ -647,11 +676,11 @@ body {
     }  
     
     .price {
-    margin-left:-170%;
+    margin-left:10%;
     margin-top: -6%;
     text-align: center;
-    grid-column-start: 3;
-    grid-column-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
     grid-row-start: 10;
     grid-row-end: 10; 
 }
@@ -664,15 +693,22 @@ body {
     margin-bottom: -10%;
     width: 85%;
     }
-
+.reviews {
+    grid-row-start: 11;
+    grid-row-end: 11;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin-left: 0;
+    margin-bottom: 5%;
+}
 
     .wedding-text4{
         margin-top: 15%;
         text-align: left;
         grid-column-start: 1;
         grid-column-end: 4;
-        grid-row-start: 11;
-        grid-row-end: 11; 
+        grid-row-start: 12;
+        grid-row-end: 12; 
     }
     
     .wedding-text4 p{
