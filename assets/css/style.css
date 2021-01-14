@@ -432,6 +432,7 @@ footer {
 .footer-text a{
     margin: 3%;
     color: white;
+    font-size: 23px;
 }
 
 /* for big screens */
