@@ -68,6 +68,11 @@ body {
   /* for phone */
   @media only screen and (max-width: 600px) {
 
+    
+    .nav {
+      margin-top: -15%;
+      }
+
     .nav .nav-btn {
       display:block;
       position: absolute;
@@ -95,7 +100,7 @@ body {
       text-align: center;
       justify-content:center;
       width: 100%;
-      background-color: #333;
+      background-color: #13141A;  
       height: 0px;
       transition: all 0.3s ease-in;
       overflow-y: hidden;
@@ -108,12 +113,12 @@ body {
       margin-right:1%;
       margin-bottom: 3px;
       margin-top: 3px;
-      width: 20%;
+      width: 27%;
       font-size: 0.8rem;
     }
    
     .nav #nav-check:checked ~ .nav-links {
-      height: calc(35vh - 50px);
+      height: calc(42vh - 50px);
     }
   }
 
@@ -494,6 +499,7 @@ body {
 
 }
 
+<<<<<<< HEAD
 /* for phone */
 @media only screen and (max-width: 500px){
     .grid-wedding{
@@ -629,13 +635,15 @@ body {
         width: 210%;
         }
 }
+=======
+>>>>>>> 6301d0bfa34133884e79bf7e556b2d6b8858c693
 
 /* for phone */
 @media only screen and (max-width: 700px){
     .grid-wedding{
     display: grid;
     height: 100%;
-    margin-top: 5%;
+    margin-top: 15%;
     margin-right: 15%;
     margin-left: 15%;
     background-color:#333333cb;  
