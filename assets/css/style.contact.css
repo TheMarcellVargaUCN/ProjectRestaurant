@@ -8,6 +8,26 @@ html {
     font-family: 'Open Sans', sans-serif;
     line-height: 1.5;
 }
+.ratebtn {
+  border: none;
+  border-radius: 2px;
+  background-color: #22242e;
+  color: white;
+  width: 150px;
+  height: 65px;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 0;
+}
+.ratebtn:hover h3 {
+  display:none;
+}
+
+.ratebtn:hover::before{
+  content:"4,7 STARS";
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+}
+
 
 * {
     box-sizing: border-box;
