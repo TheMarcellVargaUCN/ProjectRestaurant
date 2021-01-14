@@ -15,7 +15,13 @@ html {
     width: 100%;
     background-color: #13141A;  
     position: fixed;
-    margin-top: -2.4%;
+    margin-top: -5%;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    z-index: 7;
+
   }
   
   .nav .nav-header {
@@ -132,9 +138,7 @@ html {
     text-align: center;
     font-size: 1rem; 
     display: flex;
-    margin: 0;
-    margin-left: 14vw;
-    margin-right: 14vw;
+    margin: auto;
 
 }
 
@@ -176,8 +180,8 @@ html {
 }
     
 .season-img1 {
-        margin-top: 5vh;
-        margin-bottom: 5vh;
+        margin-top: 2.5vh;
+        margin-bottom: 2.5vh;
         display: inline-block;
 }    
 
@@ -228,38 +232,6 @@ html {
     text-align: center;
 }
 
-.reviews {
-    position: relative;
-    padding-top: 2vh;
-    margin: auto;
-    width: 200px;
-
-}
-  
-.reviews img {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    box-shadow: 3px 3px 10px black;
-}
-  
-.ratebtn {
-    position: absolute;
-    width: 100%;
-    left:0;
-    top: 0px;
-    text-align: center;
-    opacity: 0;
-    transition: opacity .4s ease;
-}
-  
-.ratebtn a {
-    z-index: 1;
-}
-  
-.reviews:hover .ratebtn {
-    opacity: 1;
-}
 
 
 .seasonmenubox {
@@ -448,38 +420,6 @@ html {
         text-align: center;
     }
     
-    .reviews {
-        position: relative;
-        padding-top: 2.5vh;
-        padding-bottom: 2.5vh;
-        margin: auto;
-        width: 175px;
-    }
-      
-    .reviews img {
-        position: absolute;
-        width: 100%;
-        left: 0;
-        box-shadow: 3px 3px 10px black;
-    }
-      
-    .ratebtn {
-        position: absolute;
-        width: 100%;
-        left:0;
-        top: 0px;
-        text-align: center;
-        opacity: 0;
-        transition: opacity .4s ease;
-    }
-      
-    .ratebtn a {
-        z-index: 1;
-    }
-      
-    .reviews:hover .ratebtn {
-        opacity: 1;
-    }    
     
     .seasonmenubox {
         text-align: left;
@@ -663,38 +603,6 @@ html {
         text-align: center;
     }
     
-    .reviews {
-        position: relative;
-        padding-top: 2.5vh;
-        padding-bottom: 2.5vh;
-        margin: auto;
-        width: 175px;
-    }
-      
-    .reviews img {
-        position: absolute;
-        width: 100%;
-        left: 0;
-        box-shadow: 3px 3px 10px black;
-    }
-      
-    .ratebtn {
-        position: absolute;
-        width: 100%;
-        left:0;
-        top: 0px;
-        text-align: center;
-        opacity: 0;
-        transition: opacity .4s ease;
-    }
-      
-    .ratebtn a {
-        z-index: 1;
-    }
-      
-    .reviews:hover .ratebtn {
-        opacity: 1;
-    }    
     
     .seasonmenubox {
         text-align: left;
