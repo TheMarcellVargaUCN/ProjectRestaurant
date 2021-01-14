@@ -1,16 +1,17 @@
 .reviews {
   position: relative;
   margin-top: 50px;
-  width: 10%;
+  width: 150PX;
 }
 
-img {
+.reviews img {
   position: absolute;
   width:100%;
   left: 0;
+  box-shadow: 3px 3px 10px black;
 }
 
-.button {
+.ratebtn {
   position: absolute;
   width: 100%;
   left:0;
@@ -20,10 +21,11 @@ img {
   transition: opacity .4s ease;
 }
 
-.button a {
+.ratebtn a {
   z-index: 1;
 }
 
-.reviews:hover .button {
+.reviews:hover .ratebtn {
   opacity: 1;
 }
+
