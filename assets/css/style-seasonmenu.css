@@ -228,6 +228,39 @@ html {
     text-align: center;
 }
 
+.reviews {
+    position: relative;
+    padding-top: 2vh;
+    margin: auto;
+    width: 200px;
+
+}
+  
+.reviews img {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    box-shadow: 3px 3px 10px black;
+}
+  
+.ratebtn {
+    position: absolute;
+    width: 100%;
+    left:0;
+    top: 0px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity .4s ease;
+}
+  
+.ratebtn a {
+    z-index: 1;
+}
+  
+.reviews:hover .ratebtn {
+    opacity: 1;
+}
+
 
 .seasonmenubox {
     text-align: left;
@@ -264,7 +297,7 @@ html {
 
 .seasonmenubox h2 {
     color: white;
-    font-size: 175%;
+    font-size: 170%;
     margin-bottom: 2.5vh;
 
 }
@@ -273,6 +306,7 @@ html {
     color: white;
 
 }
+
 
 .starters {
     margin-top: 5vh;
@@ -414,6 +448,38 @@ html {
         text-align: center;
     }
     
+    .reviews {
+        position: relative;
+        padding-top: 2.5vh;
+        padding-bottom: 2.5vh;
+        margin: auto;
+        width: 175px;
+    }
+      
+    .reviews img {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        box-shadow: 3px 3px 10px black;
+    }
+      
+    .ratebtn {
+        position: absolute;
+        width: 100%;
+        left:0;
+        top: 0px;
+        text-align: center;
+        opacity: 0;
+        transition: opacity .4s ease;
+    }
+      
+    .ratebtn a {
+        z-index: 1;
+    }
+      
+    .reviews:hover .ratebtn {
+        opacity: 1;
+    }    
     
     .seasonmenubox {
         text-align: left;
@@ -494,33 +560,32 @@ html {
 
     
     .startersimage img {
-        width: 100%;
+        width: 75%;
         height: auto;
         margin-top: 2vh;
         margin-bottom: 2vh;
-        padding-left: 5vw;
-        padding-right: 5vw;
+        margin-left: 7.5vw;
+        margin-right: 7.5vw;
         display: inline-block;
     } 
     
     .maincoursesimage img {
-        
-        width: 100%;
+        width: 75%;
         height: auto;
         margin-top: 2vh;
         margin-bottom: 2vh;
-        padding-left: 5vw;
-        padding-right: 5vw;
+        margin-left: 7.5vw;
+        margin-right: 7.5vw;
         display: inline-block;
     }
     
     .dessertsimage img {
-        width: 100%;
+        width: 75%;
         height: auto;
         margin-top: 2vh;
         margin-bottom: 2vh;
-        padding-left: 5vw;
-        padding-right: 5vw;
+        margin-left: 7.5vw;
+        margin-right: 7.5vw;
         display: inline-block;
     }
     
@@ -598,6 +663,38 @@ html {
         text-align: center;
     }
     
+    .reviews {
+        position: relative;
+        padding-top: 2.5vh;
+        padding-bottom: 2.5vh;
+        margin: auto;
+        width: 175px;
+    }
+      
+    .reviews img {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        box-shadow: 3px 3px 10px black;
+    }
+      
+    .ratebtn {
+        position: absolute;
+        width: 100%;
+        left:0;
+        top: 0px;
+        text-align: center;
+        opacity: 0;
+        transition: opacity .4s ease;
+    }
+      
+    .ratebtn a {
+        z-index: 1;
+    }
+      
+    .reviews:hover .ratebtn {
+        opacity: 1;
+    }    
     
     .seasonmenubox {
         text-align: left;
