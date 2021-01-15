@@ -117,7 +117,7 @@ body {
   }
 
   /* ------------------------------- Reviews --------------- */
-/* .reviews {
+.reviews {
     position: relative;
     margin-top: 50px;
     width: 150PX;
@@ -152,7 +152,7 @@ body {
   
   .reviews:hover .ratebtn {
     opacity: 1;
-  } */
+  }
   
 /* ------------------------------- Confirmation --------------- */
 
