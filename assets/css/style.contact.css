@@ -170,7 +170,7 @@ body {
     margin-left: 18%;
     background-color:#333333cb;  
     grid-template-columns: 1fr 1fr ;
-    grid-template-rows: 0.2fr 0.2fr 0.3fr 0.3fr 0.3fr 0.3fr 0.1fr;
+    grid-template-rows: 0.2fr 0.2fr 0.3fr 0.3fr 0.5fr 0.3fr 0.1fr;
   }
  
 hr {
@@ -206,7 +206,7 @@ hr {
 
 .contact-img1  iframe {
     width:120%;
-    height: 190%;
+    height: 220%;
     margin-left: 10%;
 }
 
@@ -231,7 +231,7 @@ hr {
 .second-title {
     margin-left: 40%;
     margin-top:-60px;
-    margin-bottom: 10%;
+    margin-bottom: 20%;
     font-size: 0.8rem;
     color: white;
     text-align: left;
@@ -279,6 +279,12 @@ footer {
         font-size: 15px;
         height: 70px;
     }
+    .second-title {
+      margin-bottom: 20%;
+    }
+    .reviews {
+      margin-top: 70px;
+    }
     hr {
         width: 120px;
     }
@@ -306,8 +312,8 @@ footer {
         text-align: center;
         grid-row-start: 5;
         width: 71%;
-        height: 200px;
-        margin-top: 20px;
+        height: 155px;
+        margin-top: 60px;
     }
     .title-contact {
         margin: 0;
