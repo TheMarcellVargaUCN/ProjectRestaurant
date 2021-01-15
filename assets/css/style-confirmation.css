@@ -18,7 +18,6 @@ body {
 }
 
 /* ------------------------------- header--------------- */
-/* ------------------------------- header--------------- */
 .nav {
     height: 50px;
     width: 100%;
@@ -170,7 +169,7 @@ body {
 
   .grid-wedding{
       font-size: 1rem;
-      color: #96192B;
+      color: #ffffff;
   }
 
 /* ------ litle-nav ------- */
@@ -302,7 +301,6 @@ body {
     font-size:1.1rem;
     color: white;
     margin-left:1%;
-    font-style: italic;
 }
 
 .wedding-text5 {
@@ -396,7 +394,7 @@ body {
 
     .grid-wedding{
         font-size: 0.8rem;
-        color: #96192B;
+        color: #ffffff;
     }
   
 

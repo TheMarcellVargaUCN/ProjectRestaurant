@@ -187,7 +187,7 @@ html {
 
 .seasonmenu {
     text-align: center;
-    /* margin-top: 5%; */
+     margin-top: 7%; 
 }
 
 
@@ -219,7 +219,7 @@ html {
 }  
 
 .seasonmenu li a:hover {
-    color: red;
+    color: #96192B;;
   }
   
 .seasonmenu li a {
@@ -407,7 +407,7 @@ html {
     }  
     
     .seasonmenu li a:hover {
-        color: red;
+        color:#96192B;;
     }
       
     .seasonmenu li a {
@@ -590,7 +590,7 @@ html {
     }  
     
     .seasonmenu li a:hover {
-        color: red;
+        color: #96192B;;
       }
       
     .seasonmenu li a {
@@ -608,7 +608,7 @@ html {
         text-align: left;
         display: grid;
         height: auto;
-        margin-top: 5vh;
+        margin-top: 9%;
         margin-bottom: 5vh;
         margin-right: 15%;
         margin-left: 15%;
