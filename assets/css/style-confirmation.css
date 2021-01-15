@@ -122,8 +122,8 @@ body {
     }
   }
 
-/* ------------------------------- Confirmation --------------- */
-.reviews {
+  /* ------------------------------- Reviews --------------- */
+/* .reviews {
     position: relative;
     margin-top: 50px;
     width: 150PX;
@@ -158,13 +158,15 @@ body {
   
   .reviews:hover .ratebtn {
     opacity: 1;
-  }
+  } */
   
+/* ------------------------------- Confirmation --------------- */
+
   
 .grid-wedding{
     display: grid;
     height: 100%;
-    margin-top: 5%;
+    margin-top: 10%;
     margin-right: 15%;
     margin-left: 15%;
     background-color:#333333cb; 
@@ -233,11 +235,11 @@ body {
     grid-row-start: 2;
     grid-row-end: 2;
     font-size: 1.1rem;
-    font-weight: bold;
 }
 
 .title-wedding p {
     font-size:1rem;
+    font-weight: bold;
     color:white;  
 
 }
@@ -499,144 +501,6 @@ body {
 
 }
 
-<<<<<<< HEAD
-/* for phone */
-@media only screen and (max-width: 500px){
-    .grid-wedding{
-        display: grid;
-        height: 100%;
-        margin-top: 5%;
-        margin-right: 15%;
-        margin-left: 15%;
-        background-color:#333333cb; 
-        grid-template-columns: 1fr;
-        grid-template-rows:0.3fr 0.2fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.5fr;
-        }
-    
-        .grid-wedding{
-            font-size: 0.6rem;
-            color: #96192B;
-        }
-      
-    
-    .wedding-nav-title  {
-        font-size: 1rem;
-    } 
-    
-    .wedding-nav  {
-        margin-top: -3%;
-        }
-     .wedding-nav p {
-        font-size:0.7rem;
-        }
-      
-    .wedding-nav p .active{
-        font-size:0.7rem;
-        }
-        
-    .grid-wedding .title-wedding{
-        font-size: 0.9rem;
-        }
-        
-    .title-wedding p {
-        font-size:0.8rem;
-        color:white;  
-        }
-    
-
-    .wedding-img2 {
-        margin-top: 10%;
-    }
-    
-  
-    .wedding-text1 {
-        margin-top: 15%;
-        text-align: center;
-        grid-column-start: 1;
-         grid-column-end: 4;
-         grid-row-start: 3;
-         grid-row-end: 3; 
-        margin-left: 20%;
-        margin-top: 3%;
-        }
-        
-    .wedding-text1 p {
-        font-size:0.8rem;
-        width: 120%;
-    }
-    .wedding-text5 {
-        margin-top: 15%;
-        text-align: center;
-        grid-column-start: 1;
-         grid-column-end: 4;
-         grid-row-start: 4;
-         grid-row-end: 4; 
-        margin-left: 8%;
-        margin-top: 3%;
-    }
-    
-    .wedding-text5 p {
-        font-size:0.8rem;
-        width: 60%;
-        margin-top:0%;
-    }
-    
-    .wedding-text2 {
-        margin-top: 15%;
-        text-align: center;
-        grid-column-start: 1;
-         grid-column-end: 4;
-         grid-row-start: 5;
-         grid-row-end: 5; 
-        margin-top: 5%;
-        margin-left:8%;
-    } 
-    
-    .wedding-text2 p {
-        font-size:0.8rem;
-        width: 59%;
-        color: white;
-    }
-    .wedding-text3 {
-        margin-top: 1%;
-        margin-left: 8%; 
-        margin-top: 15%;
-        text-align: center;
-        grid-column-start: 1;
-         grid-column-end: 4;
-         grid-row-start: 6;
-         grid-row-end: 6; 
-    }
-    
-    .wedding-text3 p {
-        font-size:0.8rem;
-    } 
-    
-    .wedding-right {
-        margin-top: 15%;
-        text-align: center;
-        grid-column-start: 1;
-         grid-column-end: 4;
-         grid-row-start: 7;
-         grid-row-end: 7; 
-        margin-top: 85%;
-        margin-right: 5%;
-    } 
-    
-    .wedding-right p {
-        font-size:0.8rem;
-        width: 100%;
-    }
-    .price p{
-        margin-left: -92%;
-        }
-    .price p{
-        font-size: 0.7rem;
-        width: 210%;
-        }
-}
-=======
->>>>>>> 6301d0bfa34133884e79bf7e556b2d6b8858c693
 
 /* for phone */
 @media only screen and (max-width: 700px){
