@@ -172,11 +172,13 @@ html {
 
 @media only screen and (min-width: 1000px) {
 
+
 .title-season-p {
         color: white;
         text-align: center;
         font-size: 1rem;
         margin-top: 2.5vh;
+        font-style: italic;
 }
     
 .season-img1 {
@@ -337,7 +339,7 @@ html {
 
 .season-text {
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 
@@ -363,6 +365,8 @@ html {
         margin-top: 5vh;
         margin-bottom: 5vh;
         font-size: 1.2rem;
+        font-style: italic;
+
     }
 
     .season-img1 {
@@ -550,10 +554,11 @@ html {
         font-size: 1rem;
         margin-top: 2.5vh;
         margin-bottom: 2.5vh;
+        font-style: italic;
     }
 
     .season-text p {
-        font-size: 1.2rem;
+        font-size: 1rem;
         margin-top: 2.5vh;
         margin-bottom: 2.5vh;
     }
