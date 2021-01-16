@@ -24,6 +24,7 @@ body {
     background-color:#13141A;
     position: fixed;
     margin-top: -5%;
+    z-index: 1;
   }
   
   .nav .nav-header {
@@ -125,6 +126,7 @@ body {
     grid-column-start: 1;
     grid-column-end: 1;
     margin-left: 35%;
+    margin-bottom: 20px;
     z-index: 0;
   }
   
@@ -132,7 +134,7 @@ body {
     position: absolute;
     width:100%;
     left: 0;
-    box-shadow: 3px 3px 10px black;
+    box-shadow: 1px 1px 5px black;
   }
   
   .ratebtn {
