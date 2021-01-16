@@ -342,6 +342,11 @@ html {
     font-size: 1rem;
 }
 
+.season-text p {
+    font-size: 1rem;
+    margin: 0;
+}
+
 
 }
 
@@ -362,8 +367,8 @@ html {
     }
 
     .title-season-p {
-        margin-top: 5vh;
-        margin-bottom: 5vh;
+        margin-top: 2.5vh;
+        margin-bottom: 2.5vh;
         font-size: 1.2rem;
         font-style: italic;
 
@@ -804,7 +809,7 @@ html {
 
 
 /* for phone */
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 620px){
 
     .grid-footer .footer-text{
         grid-column-start: 2;
