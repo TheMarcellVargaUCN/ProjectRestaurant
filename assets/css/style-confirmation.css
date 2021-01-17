@@ -47,10 +47,11 @@ body {
     float: right;
     margin-right: 3%;
     font-size: 1rem;
+    margin-top: 1vw;
   }
   
   .nav .nav-links a {
-    display: inline-block;
+    display: inline;
     padding: 13px 10px 13px 10px;
     text-decoration: none;
     color: #efefef;
@@ -250,6 +251,16 @@ body {
 
 
 
+.images-conf {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+      grid-row-start: 3;
+      grid-row-end: 3; 
+      width: 100%;
+      display: inline-flex;
+}
+
 .wedding-img1 {
     text-align: center;
      grid-column-start: 1;
@@ -259,7 +270,8 @@ body {
 }
 
 .wedding-img1 img {
-    width:90%; 
+    margin-left: 20%;
+    width:150%; 
 }
 
 .wedding-img2 {
@@ -271,7 +283,8 @@ body {
     
 }
 .wedding-img2 img {
-    width:90%;
+    margin-left: 20%;
+    width:50%;
 }
 
 .wedding-img2-phone img {
@@ -286,7 +299,8 @@ body {
      grid-row-end: 3;    
 }
 .wedding-img3 img {
-    width:90%;
+    margin-left: -20%;
+    width:95%; 
 }
 
 
@@ -567,6 +581,7 @@ body {
         
     .wedding-img1 img {
         width:70%; 
+        margin-left: -2%;
         }
 
 
