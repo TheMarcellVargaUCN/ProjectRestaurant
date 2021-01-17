@@ -249,7 +249,7 @@ html {
     padding-bottom: 2.5vh;
     background-color:#333333cb; 
     grid-gap: 2.5vw;
-    grid-template-columns: (2, 1fr);
+    grid-template-columns:1fr;
     grid-template-rows: auto;
     grid-template-areas:
     'seasonmenuintro seasonmenuintro'
